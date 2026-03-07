@@ -17,13 +17,11 @@ public class RecipeBook : MonoBehaviour
     public Button book;
     private int index;
     private bool active = false;
-    private GameManager gameManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         canvas.gameObject.SetActive(false);
         active = false;
-        gameManager = FindFirstObjectByType<GameManager>();
     }
     public void Show()
     {
@@ -34,12 +32,16 @@ public class RecipeBook : MonoBehaviour
         s.PlayPageSFX();
         canvas.gameObject.SetActive(true);
         book.gameObject.SetActive(false);
-        potions = gameManager.potions;
-        for (int i = 0; i < gameManager.potions.Count; i++)
+        potions = new List<Potion>();
+        for (int i = 0; i < GameManager.instance.GetComponent<GameManager>().potions.Count; i++)
         {
-            if (!gameManager.potions[i].unlocked)
+            if (!GameManager.instance.GetComponent<GameManager>().potions[i].unlocked)
             {
-                potions[i] = new Potion(gameManager.potions[i].index, "???", unknownpotion, new List<Ingredient>(), false, 0, gameManager.potions[i].description); //change to "This potion has not been unlocked yet!" if description isn't needed as a hint
+                potions.Add(new Potion(GameManager.instance.GetComponent<GameManager>().potions[i].index, "???", unknownpotion, new List<Ingredient>(), false, 0, GameManager.instance.GetComponent<GameManager>().potions[i].description)); //change to "This potion has not been unlocked yet!" if description isn't needed as a hint
+            }
+            else
+            {
+                potions.Add(new Potion(GameManager.instance.GetComponent<GameManager>().potions[i]));
             }
         }
         if (potions != null && potions.Count > 0)
