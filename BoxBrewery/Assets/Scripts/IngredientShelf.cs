@@ -54,7 +54,7 @@ public class IngredientShelf : MonoBehaviour
                 buttons[i].GetComponentInChildren<Image>().sprite = gameManager.inventory[i].sprite;
                 buttons[i].gameObject.SetActive(true);
                 labels[i].text = "x" + gameManager.inventory[i].owned;
-                if (gameManager.inventory[i].owned <= -39)
+                if (gameManager.inventory[i].owned <= -1)
                 {
                     labels[i].text = "inf";
                 }
@@ -148,7 +148,6 @@ public class IngredientShelf : MonoBehaviour
                 } else if (same)
                 {
                     gameManager.AddPotion(i);
-                    unlock.gameObject.SetActive(true);
                     SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
                     s.PlaySuccessSFX();
                     StartCoroutine(UnlockPopup());
