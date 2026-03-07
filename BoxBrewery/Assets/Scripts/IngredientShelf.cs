@@ -108,7 +108,7 @@ public class IngredientShelf : MonoBehaviour
         }
         if (!foundmatch)
         {
-            gameManager.potions[0] = new Potion(gameManager.potions[0], true); //this should be the Slop recipe (nothing potion)
+            gameManager.AddPotion(0);
             unlock.gameObject.SetActive(true);
             unlock.GetComponentInChildren<TextMeshProUGUI>().text = "Ambiguous brew? \n Slop Potion";
         }

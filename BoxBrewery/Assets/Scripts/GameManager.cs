@@ -33,11 +33,11 @@ public class GameManager : MonoBehaviour
     }
     public void AddPotion(int index)
     {
-        inventory[index] = new Ingredient(inventory[index], 1);
+        potions[index] = new Potion(potions[index], 1);
     }
     public void UsePotion(int index)
     {
-        inventory[index] = new Ingredient(inventory[index], -1);
+        potions[index] = new Potion(potions[index], -1);
     }
 }
 

@@ -12,6 +12,7 @@ public class RecipeBook : MonoBehaviour
     public TextMeshProUGUI namelabel;
     public TextMeshProUGUI description;
     public TextMeshProUGUI ingredientslabel;
+    public TextMeshProUGUI amountlabel;
     public Canvas canvas;
     public Button book;
     private int index;
@@ -44,6 +45,7 @@ public class RecipeBook : MonoBehaviour
             image.sprite = potions[0].sprite;
             namelabel.text = potions[0].name;
             description.text = potions[0].description;
+            amountlabel.text = "x"+potions[0].owned;
             ingredientslabel.text = "";
             for (int i = 0; i < potions[0].ingredients.Count; i++)
             {
@@ -69,6 +71,7 @@ public class RecipeBook : MonoBehaviour
             image.sprite = potions[index].sprite;
             namelabel.text = potions[index].name;
             description.text = potions[index].description;
+            amountlabel.text = "x" + potions[index].owned;
             ingredientslabel.text = "";
             for (int i = 0; i < potions[index].ingredients.Count; i++)
             {
@@ -84,6 +87,7 @@ public class RecipeBook : MonoBehaviour
             image.sprite = potions[index].sprite;
             namelabel.text = potions[index].name;
             description.text = potions[index].description;
+            amountlabel.text = "x" + potions[index].owned;
             ingredientslabel.text = "";
             for (int i = 0; i < potions[index].ingredients.Count; i++)
             {
