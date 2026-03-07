@@ -54,7 +54,7 @@ public class IngredientShelf : MonoBehaviour
                 buttons[i].GetComponentInChildren<Image>().sprite = gameManager.inventory[i].sprite;
                 buttons[i].gameObject.SetActive(true);
                 labels[i].text = "x" + gameManager.inventory[i].owned;
-                if (gameManager.inventory[i].owned <= -39)
+                if (gameManager.inventory[i].owned <= -1)
                 {
                     labels[i].text = "inf";
                 }
@@ -70,6 +70,8 @@ public class IngredientShelf : MonoBehaviour
 
     public void AddIngredient(int index)
     {
+        SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
+        s.PlayClickSFX();
         if (holdingcell.Count >= _maxCauldronIngredients)
         {
             Debug.Log("Attempted adding to cauldron, but cauldron is full.");
@@ -92,6 +94,8 @@ public class IngredientShelf : MonoBehaviour
         holdingcell = new List<int>();
         UpdateShelf();
         _lister.UpdateText();
+        SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
+        s.PlayClickSFX();
     }
 
     public void Brew()
@@ -100,8 +104,7 @@ public class IngredientShelf : MonoBehaviour
         {
             return;
         }
-        SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
-        s.PlayBrewSFX();
+        
         Debug.Log("brewing");
         List<Ingredient> ingredients = new List<Ingredient>();
         for (int i = 0; i < holdingcell.Count; i++)
@@ -135,6 +138,8 @@ public class IngredientShelf : MonoBehaviour
                     unlock.GetComponentInChildren<TextMeshProUGUI>().text = "New potion unlocked: \n" + gameManager.potions[i].name;
                     
                     Debug.Log("potion unlocked!");
+                    SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
+                    s.PlayBrewSFX();
                     gameManager.AddPotion(i);
                     orderButton.gameObject.SetActive(true);
                     foundmatch = true;
@@ -143,6 +148,8 @@ public class IngredientShelf : MonoBehaviour
                 } else if (same)
                 {
                     gameManager.AddPotion(i);
+                    SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
+                    s.PlaySuccessSFX();
                     StartCoroutine(UnlockPopup());
                     unlock.GetComponentInChildren<TextMeshProUGUI>().text = "Successful brew: \n" + gameManager.potions[i].name;
                     foundmatch = true;
@@ -156,6 +163,8 @@ public class IngredientShelf : MonoBehaviour
             StartCoroutine(UnlockPopup());
             unlock.GetComponentInChildren<TextMeshProUGUI>().text = "Ambiguous brew? \n Slop Potion";
             Debug.Log(_lister.BuildString() + "made a slop potion");
+            SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
+            s.PlayFailSFX();
         }
         holdingcell = new List<int>();
         _lister.UpdateText();

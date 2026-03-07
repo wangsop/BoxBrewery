@@ -63,8 +63,6 @@ public class RecipeBook : MonoBehaviour
         book.gameObject.SetActive(true);
         index = 0;
         active = false;
-        SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
-        s.PlayPageSFX();
     }
     public void Cycle(int direction)
     {

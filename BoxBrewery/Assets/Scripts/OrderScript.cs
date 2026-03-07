@@ -64,6 +64,7 @@ public class OrderScript : MonoBehaviour
     {
         charImage.gameObject.SetActive(true);
         character.interactable = true;
+        character.GetComponent<Animator>().enabled = true;
         int index = 0;
         List<int> temp = new List<int>();
         for (int i = 0; i < GameManager.instance.GetComponent<GameManager>().customers.Count; i++)
@@ -85,6 +86,8 @@ public class OrderScript : MonoBehaviour
 
     public void StartDialogue()
     {
+        SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
+        s.PlayClickSFX();
         Debug.Log("starting dialogue");
         character.interactable = false;
         GameManager.instance.GetComponent<GameManager>().greeted = true;
@@ -140,6 +143,7 @@ public class OrderScript : MonoBehaviour
     }
     public void FulfillOrder()
     {
+        
         int index = GameManager.instance.GetComponent<GameManager>().potions.IndexOf(((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).potion);
         if (GameManager.instance.GetComponent<GameManager>().potions[index].owned > 0)
         {
@@ -152,15 +156,15 @@ public class OrderScript : MonoBehaviour
             line = ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).response;
             named = ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).name;
             GameManager.instance.GetComponent<GameManager>().currentCustomer = null;
-            Debug.Log("setting GameManager.instance.GetComponent<GameManager>() current customer to null after fulfilling order");
-            if (GameManager.instance.GetComponent<GameManager>().currentCustomer != null)
-            {
-                Debug.Log("not null: " + ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).name);
-            }
+            SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
+            s.PlayMoneySFX();
             StartCoroutine(WriteLine());
+            
         }
         else
         {
+            SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
+            s.PlayFailSFX();
             fillorder.image.color = Color.red;
             fillorder.GetComponentInChildren<TextMeshProUGUI>().text = "Not Enough";
         }
@@ -169,6 +173,8 @@ public class OrderScript : MonoBehaviour
     }
     public void CancelOrder()
     {
+        SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
+        s.PlayFailSFX();
         orderSlip.SetActive(false);
         line = ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).sadresponse;
         named = ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).name;

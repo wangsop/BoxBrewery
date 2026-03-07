@@ -14,6 +14,9 @@ public class SoundManager : MonoBehaviour
     public AudioClip brewsfx;
     public AudioClip clicksfx;
     public AudioClip pagesfx;
+    public AudioClip moneysfx;
+    public AudioClip failsfx;
+    public AudioClip successsfx;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -66,6 +69,21 @@ public class SoundManager : MonoBehaviour
     public void PlayPageSFX()
     {
         sfx.clip = pagesfx;
+        sfx.Play();
+    }
+    public void PlayMoneySFX()
+    {
+        sfx.clip = moneysfx;
+        sfx.Play();
+    }
+    public void PlayFailSFX()
+    {
+        sfx.clip = failsfx;
+        sfx.Play();
+    }
+    public void PlaySuccessSFX()
+    {
+        sfx.clip = successsfx;
         sfx.Play();
     }
 }
