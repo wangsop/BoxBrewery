@@ -12,6 +12,7 @@ public class OrderScript : MonoBehaviour
     public TextMeshProUGUI namelabel;
     public TextMeshProUGUI dialoguebox;
     public Image charImage;
+    public Button character;
     public Sprite questionmark;
     public GameObject orderSlip;
     public Image potionorder;
@@ -32,7 +33,6 @@ public class OrderScript : MonoBehaviour
             charImage.sprite = ((Customer)gameManager.currentCustomer).sprite;
             orderSlip.SetActive(true);
             potionorder.sprite = ((Customer)gameManager.currentCustomer).potion.sprite;
-            namelabel.text = ((Customer)gameManager.currentCustomer).name;
             if (((Customer)gameManager.currentCustomer).ingredients.Count > 1)
             {
                 ingredientorder.sprite = questionmark;
@@ -45,16 +45,21 @@ public class OrderScript : MonoBehaviour
         {
             NewCustomer();
         }
+        else
+        {
+            charImage.gameObject.SetActive(false);
+        }
     }
 
     public void NewCustomer()
     {
         charImage.gameObject.SetActive(true);
+        character.interactable = true;
         int index = 0;
         List<int> temp = new List<int>();
-        for (int i = 0; i < gameManager.potions.Count; i++)
+        for (int i = 0; i < gameManager.customers.Count; i++)
         {
-            if (gameManager.potions[i].unlocked)
+            if (gameManager.potions[gameManager.customers[i].potion.index].unlocked)
             {
                 temp.Add(i);
             }
@@ -63,24 +68,19 @@ public class OrderScript : MonoBehaviour
         index = temp[index];
         gameManager.currentCustomer = gameManager.customers[index];
         charImage.sprite = ((Customer)gameManager.currentCustomer).sprite;
-        namelabel.text = ((Customer)gameManager.currentCustomer).name;
         line = ((Customer)gameManager.currentCustomer).request;
+    }
+
+    public void StartDialogue()
+    {
+        character.interactable = false;
         StartCoroutine(WriteLine());
-        orderSlip.SetActive(true);
-        potionorder.sprite = ((Customer)gameManager.currentCustomer).potion.sprite;
-        if (((Customer)gameManager.currentCustomer).ingredients.Count > 1)
-        {
-            ingredientorder.sprite = questionmark;
-        }
-        else
-        {
-            ingredientorder.sprite = ((Customer)gameManager.currentCustomer).ingredients[0].sprite;
-        }
     }
 
     public IEnumerator WriteLine()
     {
         chatbox.gameObject.SetActive(true);
+        namelabel.text = ((Customer)gameManager.currentCustomer).name;
         dialoguebox.SetText("");
         string updating = "";
         foreach (char c in line.ToCharArray())
@@ -99,6 +99,19 @@ public class OrderScript : MonoBehaviour
         {
             charImage.gameObject.SetActive(false);
         }
+        else
+        {
+            orderSlip.SetActive(true);
+            potionorder.sprite = ((Customer)gameManager.currentCustomer).potion.sprite;
+            if (((Customer)gameManager.currentCustomer).ingredients.Count > 1)
+            {
+                ingredientorder.sprite = questionmark;
+            }
+            else
+            {
+                ingredientorder.sprite = ((Customer)gameManager.currentCustomer).ingredients[0].sprite;
+            }
+        }
     }
     public void FulfillOrder()
     {
@@ -109,8 +122,8 @@ public class OrderScript : MonoBehaviour
             int amount = UnityEngine.Random.Range(1, 4);
             int ind = UnityEngine.Random.Range(0, ((Customer)gameManager.currentCustomer).ingredients.Count);
             gameManager.AddIngredient(ind, amount);
+            
             orderSlip.SetActive(false);
-
             line = ((Customer)gameManager.currentCustomer).response;
             StartCoroutine(WriteLine());
             gameManager.currentCustomer = null;
@@ -124,10 +137,22 @@ public class OrderScript : MonoBehaviour
         //order fulfill visual indicators
         
     }
+    public void CancelOrder()
+    {
+        orderSlip.SetActive(false);
+        line = ((Customer)gameManager.currentCustomer).sadresponse;
+        StartCoroutine(WriteLine());
+        gameManager.currentCustomer = null;
+        gameManager.StartCooldown();
+    }
     // Update is called once per frame
     void Update()
     {
-        
+        if (gameManager.currentCustomer == null && gameManager.offcooldown)
+        {
+            NewCustomer();
+            gameManager.offcooldown = false;
+        }
     }
 }
 
@@ -137,6 +162,7 @@ public struct Customer
     public string name;
     public string request;
     public string response;
+    public string sadresponse;
     public Sprite sprite;
     public Potion potion;
     public List<Ingredient> ingredients;

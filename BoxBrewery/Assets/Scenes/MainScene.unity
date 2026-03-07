@@ -456,7 +456,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.85
+  m_fontSize: 28.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1376,7 +1376,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.6
+  m_fontSize: 31.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4890,7 +4890,8 @@ MonoBehaviour:
   customers:
   - name: Hyper Rabbit
     request: Do you have anything that'll give me a quick nap?
-    response: Thanks! I've got a race today, I've gotta take a quick nap before it!
+    response: Thanks! I'm gonna sleep well before my race today!
+    sadresponse: Oh...that's alright....
     sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
     potion:
       index: 1
@@ -5005,7 +5006,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.55
+  m_fontSize: 55.05
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6082,7 +6083,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.35
+  m_fontSize: 38.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7022,7 +7023,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 19
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
