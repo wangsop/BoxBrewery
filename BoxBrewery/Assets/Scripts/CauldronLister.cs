@@ -17,7 +17,7 @@ public class CauldronLister : MonoBehaviour
 
     }
 
-    private string BuildString()
+    public string BuildString()
     {
         Dictionary<string, int> dict = _shelf.HoldingCellToDict();
         string s = "";
