@@ -14,7 +14,6 @@ public class CauldronLister : MonoBehaviour
         _tmp = GetComponent<TextMeshProUGUI>();
         if (_shelf == null)
             _shelf = FindFirstObjectByType<IngredientShelf>();
-
     }
 
     public string BuildString()
@@ -25,6 +24,10 @@ public class CauldronLister : MonoBehaviour
         {
             string line = string.Format("{0}x {1}\n", kvp.Value, kvp.Key);
             s += line;
+        }
+        if (s.Equals(""))
+        {
+            s = "Empty for now...";
         }
         return s;
     }
