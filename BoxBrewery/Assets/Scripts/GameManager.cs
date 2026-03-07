@@ -50,8 +50,9 @@ public class GameManager : MonoBehaviour
     }
     public IEnumerator WaitCooldown()
     {
-        float rand = UnityEngine.Random.Range(3.0f, 7.0f);
+        float rand = UnityEngine.Random.Range(5.0f, 10.0f);
         yield return new WaitForSeconds(rand);
+        Debug.Log("cooldown up");
         offcooldown = true;
     }
 }
