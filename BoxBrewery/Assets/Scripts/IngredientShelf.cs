@@ -16,6 +16,7 @@ public class IngredientShelf : MonoBehaviour
     private IngredientDropper _dropper;
     [SerializeField]
     private CauldronLister _lister;
+    private int _maxCauldronIngredients = 5;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -54,6 +55,11 @@ public class IngredientShelf : MonoBehaviour
 
     public void AddIngredient(int index)
     {
+        if (holdingcell.Count >= _maxCauldronIngredients)
+        {
+            Debug.Log("Attempted adding to cauldron, but cauldron is full.");
+            return;
+        }
         Debug.Log("Add ingredient " + index + " to pot");
         holdingcell.Add(index);
         gameManager.UseIngredient(index);
@@ -61,6 +67,7 @@ public class IngredientShelf : MonoBehaviour
         UpdateShelf();
         _lister.UpdateText();
     }
+
     public void CancelBrew()
     {
         for (int i = 0; i < holdingcell.Count; i++)
@@ -110,9 +117,11 @@ public class IngredientShelf : MonoBehaviour
                     //other behavior for recipe unlock should happen here
                     unlock.gameObject.SetActive(true);
                     unlock.GetComponentInChildren<TextMeshProUGUI>().text = "New potion unlocked: \n" + gameManager.potions[i].name;
+                    
                     Debug.Log("potion unlocked!");
                     gameManager.AddPotion(i);
                     foundmatch = true;
+                    Debug.Log(_lister.BuildString() + "made a " + gameManager.potions[i].name);
                     break;
                 } else if (same)
                 {
@@ -120,6 +129,7 @@ public class IngredientShelf : MonoBehaviour
                     unlock.gameObject.SetActive(true);
                     unlock.GetComponentInChildren<TextMeshProUGUI>().text = "Successful brew: \n" + gameManager.potions[i].name;
                     foundmatch = true;
+                    Debug.Log(_lister.BuildString() + "made a " + gameManager.potions[i].name);
                 }
             }
         }
@@ -128,6 +138,7 @@ public class IngredientShelf : MonoBehaviour
             gameManager.AddPotion(0);
             unlock.gameObject.SetActive(true);
             unlock.GetComponentInChildren<TextMeshProUGUI>().text = "Ambiguous brew? \n Slop Potion";
+            Debug.Log(_lister.BuildString() + "made a slop potion");
         }
         holdingcell = new List<int>();
         _lister.UpdateText();
