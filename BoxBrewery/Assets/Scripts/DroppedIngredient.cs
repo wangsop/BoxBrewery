@@ -1,23 +1,26 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DroppedIngredient : MonoBehaviour
 {
+    [SerializeField]
     private GameManager _gameManager;
     private float _timeActive;
     private RectTransform _rParent;
     private float _leftBound;
     private float _rightBound;
     private float _startX;
+    [SerializeField]
     private AnimationClip _dropClip;
+    private Image _image;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
-        _gameManager = FindFirstObjectByType<GameManager>();
-        _rParent = transform.parent.GetComponent<RectTransform>();
-        _leftBound = _rParent.rect.xMin;
-        _rightBound = _rParent.rect.xMax;
+        if (_gameManager == null)
+            _gameManager = FindFirstObjectByType<GameManager>();
+
+        _image = GetComponent<Image>();
     }
 
     // Update is called once per frame
@@ -25,23 +28,15 @@ public class DroppedIngredient : MonoBehaviour
     {
         if (_timeActive >= _dropClip.length)
         {
-            Deactivate();
+            gameObject.SetActive(false);
             return;
         }
-        transform.position = new Vector3(Mathf.Lerp(_startX, 0, _timeActive / _dropClip.length), transform.position.y, transform.position.z);
+        _timeActive += Time.deltaTime;
     }
 
     public void Activate(int ingredientIndex)
     {
-        gameObject.GetComponent<SpriteRenderer>().sprite = _gameManager.inventory[ingredientIndex].sprite;
-        _startX = Random.Range(_leftBound, _rightBound);
-        transform.position = new Vector3(_startX, 0, transform.position.z);
-        gameObject.SetActive(true);
+        _image.sprite = _gameManager.inventory[ingredientIndex].sprite;
         _timeActive = 0;
-    }
-
-    private void Deactivate()
-    {
-        gameObject.SetActive(false);
     }
 }

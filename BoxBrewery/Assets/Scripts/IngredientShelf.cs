@@ -12,11 +12,15 @@ public class IngredientShelf : MonoBehaviour
     public Button unlock;
     private GameManager gameManager;
     private List<int> holdingcell;
+    [SerializeField]
+    private IngredientDropper _dropper;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         holdingcell = new List<int>();
         gameManager = FindFirstObjectByType<GameManager>();
+        if (_dropper == null)
+            _dropper = FindFirstObjectByType<IngredientDropper>();
         unlock.gameObject.SetActive(false);
         UpdateShelf();
     }
@@ -34,7 +38,7 @@ public class IngredientShelf : MonoBehaviour
                     labels[i].text = "inf";
                 }
             }
-            else
+            else if (i < buttons.Count)
             {
                 buttons[i].GetComponentInChildren<Image>().sprite = null;
                 buttons[i].gameObject.SetActive(false);
@@ -48,6 +52,7 @@ public class IngredientShelf : MonoBehaviour
         Debug.Log("Add ingredient " + index + " to pot");
         holdingcell.Add(index);
         gameManager.UseIngredient(index);
+        _dropper.DropIngredient(index);
         UpdateShelf();
     }
     public void CancelBrew()
