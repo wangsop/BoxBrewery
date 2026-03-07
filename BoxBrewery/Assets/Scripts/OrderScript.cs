@@ -64,6 +64,7 @@ public class OrderScript : MonoBehaviour
     {
         charImage.gameObject.SetActive(true);
         character.interactable = true;
+        character.GetComponent<Animator>().enabled = true;
         int index = 0;
         List<int> temp = new List<int>();
         for (int i = 0; i < GameManager.instance.GetComponent<GameManager>().customers.Count; i++)
