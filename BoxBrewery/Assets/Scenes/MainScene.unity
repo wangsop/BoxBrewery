@@ -4168,29 +4168,60 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
     owned: -39
   - index: 2
-    name: testing recall
+    name: Star Thyme
     sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
-    owned: 2
+    owned: 10
   - index: 3
-    name: none
+    name: Spider Silk
     sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
     owned: 0
   - index: 4
-    name: none
+    name: Lavender Smoke
     sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
     owned: 0
   - index: 5
-    name: none
+    name: Dreamcap Mushroom
     sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
     owned: 0
   - index: 6
-    name: none
+    name: Charm Clovers
     sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
     owned: 0
   - index: 7
-    name: none
+    name: Firefly Dust
     sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
     owned: 0
+  - index: 8
+    name: White Owl Feathers
+    sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+    owned: 0
+  - index: 9
+    name: Ghost Fern
+    sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+    owned: 0
+  - index: 7
+    name: Firefly Dust
+    sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+    owned: 0
+  customers:
+  - name: Hyper Rabbit
+    request: Do you have anything that'll give me a quick nap?
+    response: Thanks! I've got a race today, I've gotta take a quick nap before it!
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 1
+      name: Sleep Potion
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 2
+      name: Star Thyme
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+  offcooldown: 1
 --- !u!4 &1429120687
 Transform:
   m_ObjectHideFlags: 0

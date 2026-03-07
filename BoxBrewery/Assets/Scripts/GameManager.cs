@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Net.NetworkInformation;
 using NUnit.Framework;
@@ -10,8 +11,11 @@ public class GameManager : MonoBehaviour
     public static GameObject instance;
     public List<Potion> potions; //inventory of potions owned
     public List<Ingredient> inventory;
+    public Customer? currentCustomer;
+    public List<Customer> customers;
+    public bool offcooldown = true;
 
-     void Awake()
+    void Awake()
     {
         if (instance != null)
         {
@@ -38,6 +42,17 @@ public class GameManager : MonoBehaviour
     public void UsePotion(int index)
     {
         potions[index] = new Potion(potions[index], -1);
+    }
+    public void StartCooldown()
+    {
+        offcooldown = false;
+        StartCoroutine(WaitCooldown());
+    }
+    public IEnumerator WaitCooldown()
+    {
+        float rand = UnityEngine.Random.Range(3.0f, 7.0f);
+        yield return new WaitForSeconds(rand);
+        offcooldown = true;
     }
 }
 
