@@ -546,7 +546,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.32830733, y: 0.07300001}
   m_AnchorMax: {x: 0.44500002, y: 0.14762226}
-  m_AnchoredPosition: {x: 57.419006, y: -0.050598145}
+  m_AnchoredPosition: {x: 15.3685, y: 6.025299}
   m_SizeDelta: {x: 4.0199966, y: -1.8988953}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &146101331
@@ -1733,14 +1733,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d2e69d59238578a43922dfdbb57ff2f8, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2298,7 +2298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1003940193, guid: 5543bb040ae806c44810d3a63105a270, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10242,7 +10242,7 @@ MonoBehaviour:
   greeted: 0
   customers:
   - name: Hyper Rabbit
-    request: Do you have anything that'll give me a quick nap?
+    request: Do you have anything that'll help me take a quick nap?
     response: Thanks! I'm gonna sleep well before my race today!
     sadresponse: Oh...that's alright....
     sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
@@ -10258,6 +10258,187 @@ MonoBehaviour:
     - index: 2
       name: Star Thyme
       sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+  - name: Mother Opossum
+    request: I've been having back pain recently...anything you got that can help?
+    response: Oh, thank you so much! I can carry my children longer now!
+    sadresponse: Well, the kids are getting too big to carry anyways...
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 2
+      name: Silverleaf Salve
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 3
+      name: Spider Silk
+      sprite: {fileID: 0}
+      owned: 0
+  - name: Slow Turtle
+    request: I just wish I could run as fast as Rabbit.
+    response: Thanks. Who knows, maybe I'll even win my race today?
+    sadresponse: I guess I'll just always be a Slow Turtle.
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 3
+      name: Webwalker Tonic
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 4
+      name: Lavender Smoke
+      sprite: {fileID: 0}
+      owned: 0
+  - name: Trashy Raccoon
+    request: Hey, say I needed to...sneak into a couple of backyards. Could you help
+      a brother out?
+    response: Awww yeah, you're the best! I owe you one!
+    sadresponse: Dang. Snitch.
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 4
+      name: Invisibility Elixir
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 5
+      name: Dreamcap Mushroom
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 5
+      name: Dreamcap Mushroom
+      sprite: {fileID: 0}
+      owned: 0
+  - name: Rain Frog
+    request: The winds speak to me in my dreams...the winds are scary...
+    response: Thank you kindly...blessings upon your soul...
+    sadresponse: So I am destined to a life of restless suffering...
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 5
+      name: Dreamcatcher Daze
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 6
+      name: Charm Clovers
+      sprite: {fileID: 0}
+      owned: 0
+  - name: Forgetful Squirrel
+    request: Help!! I've forgotten where I buried my acorns!!!
+    response: So THAT'S where I left them! Thank you!!
+    sadresponse: What if I starve this winter??
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 6
+      name: Mind's Brew
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 8
+      name: White Owl Feathers
+      sprite: {fileID: 0}
+      owned: 0
+  - name: Shy Crow
+    request: I don't want to be bad luck anymore.
+    response: Thank you, really. You don't know how much this means to me.
+    sadresponse: That's ok. It's probably hopeless for me, anyways.
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 7
+      name: Liquid Luck
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 10
+      name: Ambergold Pollen
+      sprite: {fileID: 0}
+      owned: 0
+  - name: Gruff Duck
+    request: Need wife.
+    response: Hmm. Good.
+    sadresponse: You wife?
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 8
+      name: Enamour Elixir
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 0}
+      owned: 0
+  - name: Mortified Beaver
+    request: I just saw my brother bathing in the lake. You got any bleach?
+    response: Ignorance truly is bliss...
+    sadresponse: ...Bleach it is.
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 12
+      name: Forgetful Draught
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 9
+      name: Ghost Fern
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 8
+      name: White Owl Feathers
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 8
+      name: White Owl Feathers
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 8
+      name: White Owl Feathers
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 10
+      name: Ambergold Pollen
+      sprite: {fileID: 0}
       owned: 0
   offcooldown: 1
 --- !u!4 &1429120687
