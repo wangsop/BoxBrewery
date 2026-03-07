@@ -17,6 +17,8 @@ public class IngredientShelf : MonoBehaviour
     [SerializeField]
     private CauldronLister _lister;
     private int _maxCauldronIngredients = 5;
+    [SerializeField]
+    private ParticleSystem _cauldronParticles;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,6 +30,8 @@ public class IngredientShelf : MonoBehaviour
             _dropper = FindFirstObjectByType<IngredientDropper>();
         if (_lister == null)
             _lister = FindFirstObjectByType<CauldronLister>();
+        if (_cauldronParticles == null) 
+            _cauldronParticles = FindFirstObjectByType<ParticleSystem>();
         UpdateShelf();
     }
     private void UpdateShelf()
@@ -142,6 +146,7 @@ public class IngredientShelf : MonoBehaviour
         }
         holdingcell = new List<int>();
         _lister.UpdateText();
+        _cauldronParticles.Play();
     }
     public void HideUnlock()
     {
