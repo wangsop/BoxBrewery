@@ -19,7 +19,7 @@ public class RecipeBook : MonoBehaviour
     private bool active = false;
     private GameManager gameManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-     void Start()
+    void Start()
     {
         canvas.gameObject.SetActive(false);
         active = false;

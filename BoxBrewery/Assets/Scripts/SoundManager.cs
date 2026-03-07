@@ -5,11 +5,11 @@ public class SoundManager : MonoBehaviour
 {
     public static GameObject instance;
     public AudioSource soundtrack;
+    public AudioLowPassFilter lowpassfilter;
     public AudioSource sfx;
     public AudioSource rainsfx;
     public AudioClip bgm;
     public AudioClip fullrain;
-    public AudioClip muffledrain;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -35,15 +35,17 @@ public class SoundManager : MonoBehaviour
     }
     public void PlayRain()
     {
-        rainsfx.Stop();
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name.Equals("MainScene"))
         {
-            rainsfx.clip = muffledrain;
+            lowpassfilter.cutoffFrequency = 500;
         }
         else
         {
-            rainsfx.clip = fullrain;
+            lowpassfilter.cutoffFrequency = 5000;
         }
-        rainsfx.Play();
+        if (!rainsfx.isPlaying)
+        {
+            rainsfx.Play();
+        }
     }
 }
