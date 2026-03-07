@@ -14,14 +14,19 @@ public class IngredientShelf : MonoBehaviour
     private List<int> holdingcell;
     [SerializeField]
     private IngredientDropper _dropper;
+    [SerializeField]
+    private CauldronLister _lister;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         holdingcell = new List<int>();
         gameManager = FindFirstObjectByType<GameManager>();
+        unlock.gameObject.SetActive(false);
         if (_dropper == null)
             _dropper = FindFirstObjectByType<IngredientDropper>();
-        unlock.gameObject.SetActive(false);
+        if (_lister == null)
+            _lister = FindFirstObjectByType<CauldronLister>();
         UpdateShelf();
     }
     private void UpdateShelf()
@@ -54,6 +59,7 @@ public class IngredientShelf : MonoBehaviour
         gameManager.UseIngredient(index);
         _dropper.DropIngredient(index);
         UpdateShelf();
+        _lister.UpdateText();
     }
     public void CancelBrew()
     {
@@ -61,12 +67,18 @@ public class IngredientShelf : MonoBehaviour
         {
             gameManager.AddIngredient(holdingcell[i]);
         }
-        UpdateShelf();
         holdingcell = new List<int>();
+        UpdateShelf();
+        _lister.UpdateText();
     }
 
     public void Brew()
     {
+        if (holdingcell.Count == 0)
+        {
+            return;
+        }
+
         Debug.Log("brewing");
         List<Ingredient> ingredients = new List<Ingredient>();
         for (int i = 0; i < holdingcell.Count; i++)
@@ -118,11 +130,31 @@ public class IngredientShelf : MonoBehaviour
             unlock.GetComponentInChildren<TextMeshProUGUI>().text = "Ambiguous brew? \n Slop Potion";
         }
         holdingcell = new List<int>();
+        _lister.UpdateText();
     }
     public void HideUnlock()
     {
         unlock.gameObject.SetActive(false);
     }
+
+    public Dictionary<string, int> HoldingCellToDict()
+    {
+        Dictionary<string, int> dict = new Dictionary<string, int>();
+        foreach (int index in holdingcell)
+        {
+            if (dict.ContainsKey(gameManager.inventory[index].name))
+            {
+                // add one
+                dict[gameManager.inventory[index].name] = dict[gameManager.inventory[index].name] + 1;
+            } else
+            {
+                // initialize entry
+                dict.Add(gameManager.inventory[index].name, 1);
+            }
+        }
+        return dict;
+    }
+
     // Update is called once per frame
     void Update()
     {
