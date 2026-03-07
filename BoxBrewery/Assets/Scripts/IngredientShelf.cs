@@ -1,6 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
+using NUnit.Framework.Constraints;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -119,7 +121,7 @@ public class IngredientShelf : MonoBehaviour
                 {
                     gameManager.potions[i] = new Potion(gameManager.potions[i], true);
                     //other behavior for recipe unlock should happen here
-                    unlock.gameObject.SetActive(true);
+                    StartCoroutine(UnlockPopup());
                     unlock.GetComponentInChildren<TextMeshProUGUI>().text = "New potion unlocked: \n" + gameManager.potions[i].name;
                     
                     Debug.Log("potion unlocked!");
@@ -130,7 +132,7 @@ public class IngredientShelf : MonoBehaviour
                 } else if (same)
                 {
                     gameManager.AddPotion(i);
-                    unlock.gameObject.SetActive(true);
+                    StartCoroutine(UnlockPopup());
                     unlock.GetComponentInChildren<TextMeshProUGUI>().text = "Successful brew: \n" + gameManager.potions[i].name;
                     foundmatch = true;
                     Debug.Log(_lister.BuildString() + "made a " + gameManager.potions[i].name);
@@ -140,7 +142,7 @@ public class IngredientShelf : MonoBehaviour
         if (!foundmatch)
         {
             gameManager.AddPotion(0);
-            unlock.gameObject.SetActive(true);
+            StartCoroutine(UnlockPopup());
             unlock.GetComponentInChildren<TextMeshProUGUI>().text = "Ambiguous brew? \n Slop Potion";
             Debug.Log(_lister.BuildString() + "made a slop potion");
         }
@@ -148,6 +150,14 @@ public class IngredientShelf : MonoBehaviour
         _lister.UpdateText();
         _cauldronParticles.Play();
     }
+
+    IEnumerator UnlockPopup()
+    {
+        yield return new WaitForSeconds(1.2f);
+        unlock.gameObject.SetActive(true);
+    }
+
+
     public void HideUnlock()
     {
         unlock.gameObject.SetActive(false);
