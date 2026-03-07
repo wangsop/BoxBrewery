@@ -12,6 +12,8 @@ public class IngredientShelf : MonoBehaviour
     public List<Button> buttons;
     public List<TextMeshProUGUI> labels;
     public Button unlock;
+    [SerializeField]
+    private Image _unlockImage;
     public Button orderButton;
     private GameManager gameManager;
     private List<int> holdingcell;
@@ -35,6 +37,8 @@ public class IngredientShelf : MonoBehaviour
             _lister = FindFirstObjectByType<CauldronLister>();
         if (_cauldronParticles == null) 
             _cauldronParticles = FindFirstObjectByType<ParticleSystem>();
+        if (_unlockImage == null)
+            _unlockImage = unlock.GetComponentInChildren<Image>();
         UpdateShelf();
         orderButton.gameObject.SetActive(false);
         for (int i = 1; i < gameManager.potions.Count; i++)
@@ -135,6 +139,7 @@ public class IngredientShelf : MonoBehaviour
                     gameManager.potions[i] = new Potion(gameManager.potions[i], true);
                     //other behavior for recipe unlock should happen here
                     StartCoroutine(UnlockPopup());
+                    _unlockImage.sprite = gameManager.potions[i].sprite;
                     unlock.GetComponentInChildren<TextMeshProUGUI>().text = "New potion unlocked: \n" + gameManager.potions[i].name;
                     
                     Debug.Log("potion unlocked!");
@@ -151,6 +156,7 @@ public class IngredientShelf : MonoBehaviour
                     SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
                     s.PlaySuccessSFX();
                     StartCoroutine(UnlockPopup());
+                    _unlockImage.sprite = gameManager.potions[i].sprite;
                     unlock.GetComponentInChildren<TextMeshProUGUI>().text = "Successful brew: \n" + gameManager.potions[i].name;
                     foundmatch = true;
                     Debug.Log(_lister.BuildString() + "made a " + gameManager.potions[i].name);
@@ -160,6 +166,7 @@ public class IngredientShelf : MonoBehaviour
         if (!foundmatch)
         {
             gameManager.AddPotion(0);
+            _unlockImage.sprite = gameManager.potions[0].sprite;
             StartCoroutine(UnlockPopup());
             unlock.GetComponentInChildren<TextMeshProUGUI>().text = "Ambiguous brew? \n Slop Potion";
             Debug.Log(_lister.BuildString() + "made a slop potion");
