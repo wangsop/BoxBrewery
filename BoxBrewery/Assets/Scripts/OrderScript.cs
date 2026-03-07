@@ -99,10 +99,12 @@ public class OrderScript : MonoBehaviour
         namelabel.text = named;
         dialoguebox.SetText("");
         string updating = "";
+        SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
         foreach (char c in line.ToCharArray())
         {
             updating += c;
             dialoguebox.SetText(updating);
+            s.PlayTalkSFX();
             yield return new WaitForSeconds(0.03f);
         }
         nextButton.gameObject.SetActive(true);

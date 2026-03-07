@@ -10,6 +10,10 @@ public class SoundManager : MonoBehaviour
     public AudioSource rainsfx;
     public AudioClip bgm;
     public AudioClip fullrain;
+    public AudioClip talksfx;
+    public AudioClip brewsfx;
+    public AudioClip clicksfx;
+    public AudioClip pagesfx;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -35,17 +39,33 @@ public class SoundManager : MonoBehaviour
     }
     public void PlayRain()
     {
-        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name.Equals("MainScene"))
-        {
-            lowpassfilter.cutoffFrequency = 500;
-        }
-        else
-        {
-            lowpassfilter.cutoffFrequency = 5000;
-        }
         if (!rainsfx.isPlaying)
         {
             rainsfx.Play();
         }
+    }
+    public void PlayTalkSFX()
+    {
+        if (!sfx.isPlaying)
+        {
+            sfx.clip = talksfx;
+            sfx.Play();
+        }
+        
+    }
+    public void PlayBrewSFX()
+    {
+        sfx.clip = brewsfx;
+        sfx.Play();
+    }
+    public void PlayClickSFX()
+    {
+        sfx.clip = clicksfx;
+        sfx.Play();
+    }
+    public void PlayPageSFX()
+    {
+        sfx.clip = pagesfx;
+        sfx.Play();
     }
 }

@@ -94,7 +94,8 @@ public class IngredientShelf : MonoBehaviour
         {
             return;
         }
-
+        SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
+        s.PlayBrewSFX();
         Debug.Log("brewing");
         List<Ingredient> ingredients = new List<Ingredient>();
         for (int i = 0; i < holdingcell.Count; i++)

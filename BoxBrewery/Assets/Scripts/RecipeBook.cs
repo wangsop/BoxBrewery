@@ -30,6 +30,8 @@ public class RecipeBook : MonoBehaviour
         if (active){
             return;
         }
+        SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
+        s.PlayPageSFX();
         canvas.gameObject.SetActive(true);
         book.gameObject.SetActive(false);
         potions = gameManager.potions;
@@ -61,9 +63,13 @@ public class RecipeBook : MonoBehaviour
         book.gameObject.SetActive(true);
         index = 0;
         active = false;
+        SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
+        s.PlayPageSFX();
     }
     public void Cycle(int direction)
     {
+        SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
+        s.PlayPageSFX();
         if (direction > 0)
         {
             index++;

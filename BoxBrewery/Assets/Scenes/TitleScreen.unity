@@ -1280,6 +1280,10 @@ MonoBehaviour:
   rainsfx: {fileID: 2121303434}
   bgm: {fileID: 8300000, guid: 915c039f435137648bad2bc0443633dd, type: 3}
   fullrain: {fileID: 8300000, guid: 4617e44db6272284a87fece68877f19d, type: 3}
+  talksfx: {fileID: 8300000, guid: ef4371b3a79dc4b4caa519979783cc98, type: 3}
+  brewsfx: {fileID: 8300000, guid: abe8345c89e24424f80d89beb72478f1, type: 3}
+  clicksfx: {fileID: 8300000, guid: 0b6039bc850680d4f856fb6bd7248b61, type: 3}
+  pagesfx: {fileID: 8300000, guid: f57175df3c5a12842a89372c9b377f49, type: 3}
 --- !u!1 &1983351601
 GameObject:
   m_ObjectHideFlags: 0
