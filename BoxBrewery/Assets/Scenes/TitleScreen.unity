@@ -670,6 +670,18 @@ MonoBehaviour:
           m_StringArgument: MainScene
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1817999285}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayClickSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &580629414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -930,6 +942,18 @@ MonoBehaviour:
       - m_Target: {fileID: 546267177}
         m_TargetAssemblyTypeName: SceneManager, Assembly-CSharp
         m_MethodName: QuitToDesktop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1817999285}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayClickSFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1284,6 +1308,9 @@ MonoBehaviour:
   brewsfx: {fileID: 8300000, guid: abe8345c89e24424f80d89beb72478f1, type: 3}
   clicksfx: {fileID: 8300000, guid: 0b6039bc850680d4f856fb6bd7248b61, type: 3}
   pagesfx: {fileID: 8300000, guid: f57175df3c5a12842a89372c9b377f49, type: 3}
+  moneysfx: {fileID: 8300000, guid: bc7d03fbf833da049ab799564018e1c9, type: 3}
+  failsfx: {fileID: 8300000, guid: 9b0e9bb63e747e14bb2432690897f256, type: 3}
+  successsfx: {fileID: 8300000, guid: 001f436db8ff03a4caa121695a52c14e, type: 3}
 --- !u!1 &1983351601
 GameObject:
   m_ObjectHideFlags: 0
