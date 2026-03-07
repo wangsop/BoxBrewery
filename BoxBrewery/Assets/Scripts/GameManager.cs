@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public List<Potion> potions; //inventory of potions owned
     public List<Ingredient> inventory;
     public Customer? currentCustomer;
+    public bool greeted;
     public List<Customer> customers;
     public bool offcooldown = true;
 
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
     }
     public void StartCooldown()
     {
+        Debug.Log("Starting cooldown");
         offcooldown = false;
         StartCoroutine(WaitCooldown());
     }

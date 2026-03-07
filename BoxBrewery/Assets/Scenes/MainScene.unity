@@ -458,7 +458,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.2
+  m_fontSize: 32.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1382,7 +1382,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.4
+  m_fontSize: 30.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9869,6 +9869,7 @@ MonoBehaviour:
     name: Firefly Dust
     sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
     owned: 0
+  greeted: 0
   customers:
   - name: Hyper Rabbit
     request: Do you have anything that'll give me a quick nap?
@@ -11117,6 +11118,7 @@ MonoBehaviour:
   - {fileID: 1591075935}
   - {fileID: 2039673844}
   unlock: {fileID: 716655990}
+  orderButton: {fileID: 2006648562}
   _dropper: {fileID: 587077628}
   _lister: {fileID: 0}
   _cauldronParticles: {fileID: 0}
@@ -11208,7 +11210,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37.8
+  m_fontSize: 43.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

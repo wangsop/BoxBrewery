@@ -11,8 +11,8 @@ public class SceneManager : MonoBehaviour
     }
     public void LoadScene(string scene)
     {
-        SoundManager.instance.GetComponent<SoundManager>().PlayRain();
         UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
+        SoundManager.instance.GetComponent<SoundManager>().PlayRain();
     }
     public void QuitToDesktop()
     {

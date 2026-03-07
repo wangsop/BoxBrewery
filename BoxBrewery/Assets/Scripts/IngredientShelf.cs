@@ -12,6 +12,7 @@ public class IngredientShelf : MonoBehaviour
     public List<Button> buttons;
     public List<TextMeshProUGUI> labels;
     public Button unlock;
+    public Button orderButton;
     private GameManager gameManager;
     private List<int> holdingcell;
     [SerializeField]
@@ -35,6 +36,14 @@ public class IngredientShelf : MonoBehaviour
         if (_cauldronParticles == null) 
             _cauldronParticles = FindFirstObjectByType<ParticleSystem>();
         UpdateShelf();
+        orderButton.gameObject.SetActive(false);
+        for (int i = 1; i < gameManager.potions.Count; i++)
+        {
+            if (gameManager.potions[i].unlocked)
+            {
+                orderButton.gameObject.SetActive(true);
+            }
+        }
     }
     private void UpdateShelf()
     {
@@ -91,7 +100,8 @@ public class IngredientShelf : MonoBehaviour
         {
             return;
         }
-
+        SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
+        s.PlayBrewSFX();
         Debug.Log("brewing");
         List<Ingredient> ingredients = new List<Ingredient>();
         for (int i = 0; i < holdingcell.Count; i++)
@@ -126,6 +136,7 @@ public class IngredientShelf : MonoBehaviour
                     
                     Debug.Log("potion unlocked!");
                     gameManager.AddPotion(i);
+                    orderButton.gameObject.SetActive(true);
                     foundmatch = true;
                     Debug.Log(_lister.BuildString() + "made a " + gameManager.potions[i].name);
                     break;
