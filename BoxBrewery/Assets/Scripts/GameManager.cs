@@ -8,25 +8,51 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameObject instance;
+    public static GameManager instance;
     public List<Potion> potions; //inventory of potions owned
     public List<Ingredient> inventory;
     public Customer? currentCustomer;
     public bool greeted;
     public List<Customer> customers;
     public bool offcooldown = true;
+    public bool firstentry = true;
 
     void Awake()
     {
-        if (instance != null)
+        if (instance != null && instance != this)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
         else
         {
-            DontDestroyOnLoad(gameObject);
-            instance = gameObject;
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Pausing");
+            gameObject.GetComponentInChildren<Canvas>().enabled = true;
+        }
+    }
+    public void QuitTo(int wh)
+    {
+        if (wh == 0)
+        {
+            SceneManager s = FindFirstObjectByType<SceneManager>();
+            s.LoadScene("TitleScreen");
+        }
+        else
+        {
+            SceneManager s = FindFirstObjectByType<SceneManager>();
+            s.QuitToDesktop();
+        }
+    }
+    public void Resume()
+    {
+        gameObject.GetComponentInChildren<Canvas>().enabled = false;
     }
     public void AddIngredient(int index, int amount=1)
     {

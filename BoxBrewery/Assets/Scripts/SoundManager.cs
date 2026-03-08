@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
-    public static GameObject instance;
+    public static SoundManager instance;
     public AudioSource soundtrack;
     public AudioLowPassFilter lowpassfilter;
     public AudioSource sfx;
@@ -17,17 +17,18 @@ public class SoundManager : MonoBehaviour
     public AudioClip moneysfx;
     public AudioClip failsfx;
     public AudioClip successsfx;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        if (instance != null)
+        if (instance != null && instance != this)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
         else
         {
-            DontDestroyOnLoad(gameObject);
-            instance = gameObject;
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
     }
 
