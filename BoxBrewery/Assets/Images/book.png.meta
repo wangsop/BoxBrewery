@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a5d81018a6ce2e748bd29e4b3cc46aed
+guid: e03f147816da7f049ace26ff11f1fb44
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -21,7 +21,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: scroll_0
+      name: book_0
       rect:
         serializedVersion: 2
-        x: 283
-        y: 105
-        width: 260
-        height: 322
+        x: 139
+        y: 166
+        width: 538
+        height: 305
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2339a68ebb981f46903d085ffc2bde0
-      internalID: -1048892979
+      spriteID: 0f507c541e0210f448be97771586ea46
+      internalID: -1534166252
       vertices: []
       indices: 
       edges: []
@@ -132,7 +132,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      scroll_0: -1048892979
+      book_0: -1534166252
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
