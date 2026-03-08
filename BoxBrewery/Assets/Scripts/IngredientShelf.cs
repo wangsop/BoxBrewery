@@ -141,6 +141,10 @@ public class IngredientShelf : MonoBehaviour
                     StartCoroutine(UnlockPopup());
                     _unlockImage.sprite = gameManager.potions[i].sprite;
                     unlock.GetComponentInChildren<TextMeshProUGUI>().text = "New potion unlocked: \n" + gameManager.potions[i].name;
+                    if (gameManager.potions[i].name.Equals("Polymorph Potion"))
+                    {
+                        GameManager.instance.EndGame();
+                    }
                     
                     Debug.Log("potion unlocked!");
                     SoundManager s = SoundManager.instance.GetComponent<SoundManager>();

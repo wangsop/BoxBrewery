@@ -4,11 +4,13 @@ using System.Collections;
 using System.Linq;
 using System.Net.NetworkInformation;
 using NUnit.Framework;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public GameObject endcanvas;
     public List<Potion> potions; //inventory of potions owned
     public List<Ingredient> inventory;
     public Customer? currentCustomer;
@@ -78,10 +80,14 @@ public class GameManager : MonoBehaviour
     }
     public IEnumerator WaitCooldown()
     {
-        float rand = UnityEngine.Random.Range(5.0f, 10.0f);
+        float rand = UnityEngine.Random.Range(3.0f, 5.0f);
         yield return new WaitForSeconds(rand);
         Debug.Log("cooldown up");
         offcooldown = true;
+    }
+    public void EndGame()
+    {
+        endcanvas.SetActive(!endcanvas.activeSelf);
     }
 }
 
@@ -177,6 +183,7 @@ public struct Ingredient
         name = i.name;
         sprite = i.sprite;
         owned = i.owned+add;
+        Debug.Log("Ingredient " + name + " now has " + owned);
     }
     public override bool Equals(object obj)
     {
