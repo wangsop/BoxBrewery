@@ -4,6 +4,9 @@ using System.Linq;
 using NUnit.Framework;
 using NUnit.Framework.Constraints;
 using TMPro;
+using Unity.VisualScripting;
+using UnityEditor.Animations;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,8 +25,11 @@ public class IngredientShelf : MonoBehaviour
     [SerializeField]
     private CauldronLister _lister;
     private int _maxCauldronIngredients = 5;
+    private bool _lastPotionWasNew = false;
     [SerializeField]
     private ParticleSystem _cauldronParticles;
+    [SerializeField]
+    private Animator potionAnimator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -141,7 +147,9 @@ public class IngredientShelf : MonoBehaviour
                     StartCoroutine(UnlockPopup());
                     _unlockImage.sprite = gameManager.potions[i].sprite;
                     unlock.GetComponentInChildren<TextMeshProUGUI>().text = "New potion unlocked: \n" + gameManager.potions[i].name;
-                    
+
+                    _lastPotionWasNew = true;
+
                     Debug.Log("potion unlocked!");
                     SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
                     s.PlayBrewSFX();
@@ -155,6 +163,9 @@ public class IngredientShelf : MonoBehaviour
                     gameManager.AddPotion(i);
                     SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
                     s.PlaySuccessSFX();
+
+                    _lastPotionWasNew = false;
+
                     StartCoroutine(UnlockPopup());
                     _unlockImage.sprite = gameManager.potions[i].sprite;
                     unlock.GetComponentInChildren<TextMeshProUGUI>().text = "Successful brew: \n" + gameManager.potions[i].name;
@@ -167,6 +178,9 @@ public class IngredientShelf : MonoBehaviour
         {
             gameManager.AddPotion(0);
             _unlockImage.sprite = gameManager.potions[0].sprite;
+
+            _lastPotionWasNew = false;
+
             StartCoroutine(UnlockPopup());
             unlock.GetComponentInChildren<TextMeshProUGUI>().text = "Ambiguous brew? \n Slop Potion";
             Debug.Log(_lister.BuildString() + "made a slop potion");
@@ -174,7 +188,6 @@ public class IngredientShelf : MonoBehaviour
             s.PlayFailSFX();
         }
         holdingcell = new List<int>();
-        _lister.UpdateText();
         _cauldronParticles.Play();
     }
 
@@ -184,10 +197,26 @@ public class IngredientShelf : MonoBehaviour
         unlock.gameObject.SetActive(true);
     }
 
-
     public void HideUnlock()
     {
+        if (_lastPotionWasNew)
+        {
+            StartCoroutine(AnimateUnlock());
+        }
+        else
+        {
+            unlock.gameObject.SetActive(false);
+            _lister.UpdateText();
+        }
+    }
+
+    IEnumerator AnimateUnlock()
+    {
+        potionAnimator.SetTrigger("UnlockedRecipe");
+        yield return new WaitForSeconds(potionAnimator.runtimeAnimatorController.animationClips[0].length);
         unlock.gameObject.SetActive(false);
+        potionAnimator.ResetTrigger("UnlockedRecipe");
+        _lister.UpdateText();
     }
 
     public Dictionary<string, int> HoldingCellToDict()
