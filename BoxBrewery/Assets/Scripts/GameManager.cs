@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public List<Customer> customers;
     public bool offcooldown = true;
     public bool firstentry = true;
+    public int prevCustomer = -1;
 
     void Awake()
     {

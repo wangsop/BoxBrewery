@@ -203,7 +203,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.65
+  m_fontSize: 35.45
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1154,7 +1154,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.25
+  m_fontSize: 33.2
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 32.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1569,7 +1569,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56
+  m_fontSize: 60.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1891,7 +1891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.26666668}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2338,7 +2338,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.15
+  m_fontSize: 35.85
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3064,9 +3064,9 @@ RectTransform:
   - {fileID: 971513384}
   - {fileID: 580629412}
   - {fileID: 720021258}
+  - {fileID: 475792636}
   - {fileID: 719494686}
   - {fileID: 1841999682}
-  - {fileID: 475792636}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3158,7 +3158,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.25
+  m_fontSize: 39.2
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4114,7 +4114,7 @@ MonoBehaviour:
     request: Do you have anything that'll help me take a quick nap?
     response: Thanks! I'm gonna sleep well before my race today!
     sadresponse: Oh...that's alright....
-    sprite: {fileID: -1853301103, guid: 54119959da8d55648a1f1919a4ee3c94, type: 3}
+    sprite: {fileID: 969097891, guid: 3e1d622862fbc774c89fce3f2183adfd, type: 3}
     potion:
       index: 1
       name: Sleep Potion
@@ -4132,7 +4132,7 @@ MonoBehaviour:
     request: I've been having back pain recently...anything you got that can help?
     response: Oh, thank you so much! I can carry my children longer now!
     sadresponse: Well, the kids are getting too big to carry anyways...
-    sprite: {fileID: -1515316723, guid: 1d383c145b68bc049b85d5d2241f972a, type: 3}
+    sprite: {fileID: -681087341, guid: 05d4f39a7654324409e25cc9c927b09c, type: 3}
     potion:
       index: 2
       name: Silverleaf Salve
@@ -4150,7 +4150,7 @@ MonoBehaviour:
     request: I just wish I could run as fast as Rabbit.
     response: Thanks. Who knows, maybe I'll even win my race today?
     sadresponse: I guess I'll just always be a Slow Turtle.
-    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    sprite: {fileID: 530129432, guid: 71dea4a2bb1ca194186bfece674a97d9, type: 3}
     potion:
       index: 3
       name: Webwalker Tonic
@@ -4169,7 +4169,7 @@ MonoBehaviour:
       a brother out?
     response: Awww yeah, you're the best! I owe you one!
     sadresponse: Dang. Snitch.
-    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    sprite: {fileID: -1515316723, guid: 1d383c145b68bc049b85d5d2241f972a, type: 3}
     potion:
       index: 4
       name: Invisibility Elixir
@@ -4191,7 +4191,7 @@ MonoBehaviour:
     request: The winds speak to me in my dreams...the winds are scary...
     response: Thank you kindly...blessings upon your soul...
     sadresponse: So I am destined to a life of restless suffering...
-    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    sprite: {fileID: -1853301103, guid: 54119959da8d55648a1f1919a4ee3c94, type: 3}
     potion:
       index: 5
       name: Dreamcatcher Daze
@@ -4209,7 +4209,7 @@ MonoBehaviour:
     request: Help!! I've forgotten where I buried my acorns!!!
     response: So THAT'S where I left them! Thank you!!
     sadresponse: What if I starve this winter??
-    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    sprite: {fileID: -1262545350, guid: 6325857c7230bdb45927777053b7fc9e, type: 3}
     potion:
       index: 6
       name: Mind's Brew
@@ -4227,7 +4227,7 @@ MonoBehaviour:
     request: I don't want to be bad luck anymore.
     response: Thank you, really. You don't know how much this means to me.
     sadresponse: That's ok. It's probably hopeless for me, anyways.
-    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    sprite: {fileID: 75685388, guid: cbdec014ff3ab5840bd973490e700b30, type: 3}
     potion:
       index: 7
       name: Liquid Luck
@@ -4260,8 +4260,8 @@ MonoBehaviour:
   - name: Gruff Duck
     request: Need wife.
     response: Hmm. Good.
-    sadresponse: You wife?
-    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    sadresponse: You be wife?
+    sprite: {fileID: 1603445273, guid: 350141916ae12c447bf139e80f3324b3, type: 3}
     potion:
       index: 8
       name: Enamour Elixir
@@ -4279,7 +4279,7 @@ MonoBehaviour:
     request: I just saw my brother bathing in the lake. You got any bleach?
     response: Ignorance truly is bliss...
     sadresponse: ...Bleach it is.
-    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    sprite: {fileID: 1069860204, guid: cfd4d957f0cdf254abb53c576554619d, type: 3}
     potion:
       index: 12
       name: Forgetful Draught
@@ -4311,6 +4311,7 @@ MonoBehaviour:
       owned: 0
   offcooldown: 1
   firstentry: 1
+  prevCustomer: -1
 --- !u!4 &1238505287
 Transform:
   m_ObjectHideFlags: 0
@@ -5317,7 +5318,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 32.85
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5582,7 +5583,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.3
+  m_fontSize: 26.55
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
