@@ -48,7 +48,7 @@ public class OrderScript : MonoBehaviour
             }
             else
             {
-                ingredientorder.sprite = ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).ingredients[0].sprite;
+                ingredientorder.sprite = GameManager.instance.GetComponent<GameManager>().inventory[((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).ingredients[0].index].sprite;
             }
         } else if (GameManager.instance.GetComponent<GameManager>().offcooldown)
         {
