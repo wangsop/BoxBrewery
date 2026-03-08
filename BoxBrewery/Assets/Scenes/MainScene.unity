@@ -1196,7 +1196,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6603463, y: 0.18900001}
   m_AnchorMax: {x: 1, y: 0.238}
-  m_AnchoredPosition: {x: 256.99997, y: -166}
+  m_AnchoredPosition: {x: 256.99994, y: -166}
   m_SizeDelta: {x: 260, y: 18.0709}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &333702355
@@ -3600,7 +3600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potions: []
-  unknownpotion: {fileID: 0}
+  unknownpotion: {fileID: -1868737730, guid: ff8ec0be743ea3946b5b83149dedb7a2, type: 3}
   image: {fileID: 2073836438}
   namelabel: {fileID: 139584398}
   description: {fileID: 380898636}
@@ -13077,7 +13077,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.18}
   m_AnchorMin: {x: 0.6603463, y: 0.35700002}
   m_AnchorMax: {x: 1, y: 0.40600002}
-  m_AnchoredPosition: {x: 256.99997, y: -33}
+  m_AnchoredPosition: {x: 256.99994, y: -33}
   m_SizeDelta: {x: 260.00595, y: 15.244484}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945473624
