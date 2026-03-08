@@ -150,7 +150,7 @@ public class OrderScript : MonoBehaviour
             GameManager.instance.GetComponent<GameManager>().UsePotion(index);
             int amount = UnityEngine.Random.Range(1, 4);
             int ind = UnityEngine.Random.Range(0, ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).ingredients.Count);
-            GameManager.instance.GetComponent<GameManager>().AddIngredient(ind, amount);
+            GameManager.instance.GetComponent<GameManager>().AddIngredient(((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).ingredients[ind].index, amount);
             
             orderSlip.SetActive(false);
             line = ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).response;

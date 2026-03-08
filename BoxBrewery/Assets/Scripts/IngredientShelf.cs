@@ -150,6 +150,11 @@ public class IngredientShelf : MonoBehaviour
 
                     _lastPotionWasNew = true;
 
+                    if (gameManager.potions[i].name.Equals("Polymorph Potion"))
+                    {
+                        GameManager.instance.EndGame();
+                    }
+                    
                     Debug.Log("potion unlocked!");
                     SoundManager s = SoundManager.instance.GetComponent<SoundManager>();
                     s.PlayBrewSFX();
