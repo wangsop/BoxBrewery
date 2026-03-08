@@ -97,3 +97,5 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+BoxBrewery/Assets/Text/BunnySnaps SDF.asset
+BoxBrewery/Assets/Text/Cozy Stroke SDF.asset

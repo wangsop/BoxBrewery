@@ -1848,11 +1848,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popup: {fileID: 1841999681}
   images:
-  - {fileID: 21300000, guid: 07a3436e22ab706489d6788053d2c861, type: 3}
-  - {fileID: -1333472981, guid: 35e29d456ee988d47b56f5cf199b0adb, type: 3}
-  - {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
-  - {fileID: 1532339316, guid: f2650a4d40ec4164480e4d79bef59704, type: 3}
-  - {fileID: -1003940193, guid: 5543bb040ae806c44810d3a63105a270, type: 3}
+  - {fileID: -1554084919, guid: ec42fb07c6262694bb32fe47ed3ce679, type: 3}
+  - {fileID: 1040517408, guid: 714b88d700ce5c341b5cff1557efd39b, type: 3}
+  - {fileID: -2091430233, guid: b3e13adc0b4d0914ca18158f5b57bdde, type: 3}
+  - {fileID: -1131236142, guid: 41faff0a42ca2e942b5436a94bdfb06f, type: 3}
+  - {fileID: -1757828187, guid: fc42e129379463848a0a935c4691b0dd, type: 3}
+  - {fileID: -1986470457, guid: 61c603ad61df14f4691b2ccae1f7fdec, type: 3}
+  - {fileID: 636532967, guid: 3d3d20dbeb025694896a9bae439f1ea9, type: 3}
+  - {fileID: -1733722228, guid: 4907ff350d4a6914b9e5a2bc74702fd5, type: 3}
+  - {fileID: -1691360990, guid: c9cbfd59be7272c45b2fb20c5806942f, type: 3}
+  - {fileID: -1877822236, guid: b00bd1789fc841a4e87f29268b395a0d, type: 3}
+  - {fileID: -888786147, guid: 26dac5dc88194f94d85f70bb1456d178, type: 3}
   cutsceneCanvas: {fileID: 937953410}
 --- !u!4 &546267178
 Transform:
@@ -4009,7 +4015,7 @@ MonoBehaviour:
     request: Do you have anything that'll help me take a quick nap?
     response: Thanks! I'm gonna sleep well before my race today!
     sadresponse: Oh...that's alright....
-    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    sprite: {fileID: -1853301103, guid: 54119959da8d55648a1f1919a4ee3c94, type: 3}
     potion:
       index: 1
       name: Sleep Potion
@@ -4027,7 +4033,7 @@ MonoBehaviour:
     request: I've been having back pain recently...anything you got that can help?
     response: Oh, thank you so much! I can carry my children longer now!
     sadresponse: Well, the kids are getting too big to carry anyways...
-    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    sprite: {fileID: -1515316723, guid: 1d383c145b68bc049b85d5d2241f972a, type: 3}
     potion:
       index: 2
       name: Silverleaf Salve

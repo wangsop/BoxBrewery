@@ -364,7 +364,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 287.15546, y: -46.000313}
+  m_AnchoredPosition: {x: 288, y: -63}
   m_SizeDelta: {x: 90.2164, y: 27.7065}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &159150222
@@ -606,7 +606,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 1393620099, guid: 93a4066983f776f44b2487122ca9a006, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1611,7 +1611,7 @@ MonoBehaviour:
   dialoguebox: {fileID: 72624348}
   charImage: {fileID: 1845577682}
   character: {fileID: 1845577684}
-  questionmark: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  questionmark: {fileID: 1393620099, guid: 93a4066983f776f44b2487122ca9a006, type: 3}
   orderSlip: {fileID: 1114710624}
   potionorder: {fileID: 217726294}
   ingredientorder: {fileID: 243542702}
@@ -1654,10 +1654,10 @@ RectTransform:
   - {fileID: 1550769737}
   m_Father: {fileID: 999113136}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.31817317, y: 0.61200005}
-  m_AnchorMax: {x: 0.66058004, y: 0.924}
-  m_AnchoredPosition: {x: 1.4548035, y: 10.5}
-  m_SizeDelta: {x: 6.9096985, y: 17.211}
+  m_AnchorMin: {x: 0.44369265, y: 0.5}
+  m_AnchorMax: {x: 0.7933074, y: 0.85600007}
+  m_AnchoredPosition: {x: -1, y: 2.5}
+  m_SizeDelta: {x: 0.9096985, y: -3.7890015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1044116021
 MonoBehaviour:
@@ -2423,7 +2423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.8911695, b: 0.61698115, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2792,14 +2792,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.22054105, g: 0.6679245, b: 0.32554704, a: 1}
+  m_Color: {r: 0.94716984, g: 0.89821696, b: 0.7202065, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+  m_Sprite: {fileID: -1515316723, guid: 1d383c145b68bc049b85d5d2241f972a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

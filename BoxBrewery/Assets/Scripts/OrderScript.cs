@@ -130,7 +130,7 @@ public class OrderScript : MonoBehaviour
             Debug.Log("there exists a customer");
             Debug.Log(((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).name);
             orderSlip.SetActive(true);
-            potionorder.sprite = ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).potion.sprite;
+            potionorder.sprite = GameManager.instance.GetComponent<GameManager>().potions[((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).potion.index].sprite;
             if (((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).ingredients.Count > 1)
             {
                 ingredientorder.sprite = questionmark;
