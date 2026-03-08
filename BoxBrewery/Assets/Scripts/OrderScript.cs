@@ -38,9 +38,9 @@ public class OrderScript : MonoBehaviour
             {
                 character.interactable = true;
                 line = ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).request;
-                name = ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).name;
+                named = ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).name;
             }
-            potionorder.sprite = ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).potion.sprite;
+            potionorder.sprite = GameManager.instance.GetComponent<GameManager>().potions[((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).potion.index].sprite;
             if (((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).ingredients.Count > 1)
             {
                 ingredientorder.sprite = questionmark;
