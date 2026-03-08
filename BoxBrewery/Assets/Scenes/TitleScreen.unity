@@ -2240,7 +2240,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.3
+  m_fontSize: 30.7
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3967,47 +3967,47 @@ MonoBehaviour:
   inventory:
   - index: 0
     name: Springwater
-    sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+    sprite: {fileID: 21300000, guid: 29d30faf3c24d93488757d2d9596113f, type: 3}
     owned: -39
   - index: 1
     name: Moon Mint
-    sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+    sprite: {fileID: 21300000, guid: ec158f95e4382d34eacae5bab51eeb93, type: 3}
     owned: -39
   - index: 2
     name: Star Thyme
-    sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+    sprite: {fileID: 21300000, guid: 6f1f041efebec3a4eb2af6b23372f1d2, type: 3}
     owned: 10
   - index: 3
     name: Spider Silk
-    sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+    sprite: {fileID: 21300000, guid: 35416f675f205a040a47c64584be6753, type: 3}
     owned: 0
   - index: 4
     name: Lavender Smoke
-    sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+    sprite: {fileID: 21300000, guid: 9366b1f7b45fd4443be94f56da9655a0, type: 3}
     owned: 0
   - index: 5
     name: Dreamcap Mushroom
-    sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+    sprite: {fileID: 21300000, guid: 458fe5cec4152024a99040fa2b1ca469, type: 3}
     owned: 0
   - index: 6
     name: Charm Clovers
-    sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+    sprite: {fileID: 21300000, guid: aeccb71fe1f2f1d49bc7b23ab614f155, type: 3}
     owned: 0
   - index: 7
     name: Firefly Dust
-    sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+    sprite: {fileID: 21300000, guid: b49cba80fc557d6419c7e0f14e0211d9, type: 3}
     owned: 0
   - index: 8
     name: White Owl Feathers
-    sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+    sprite: {fileID: 21300000, guid: 1e5a4a9e9313f51439a8e5fe2b9a4ea7, type: 3}
     owned: 0
   - index: 9
     name: Ghost Fern
-    sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+    sprite: {fileID: 21300000, guid: b477ed5bc4f466d469b85d0ae10d4017, type: 3}
     owned: 0
   - index: 10
     name: Ambergold Pollen
-    sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+    sprite: {fileID: 21300000, guid: 0e01dffc594426c419540cc55bb41d7f, type: 3}
     owned: 0
   greeted: 0
   customers:
@@ -5218,7 +5218,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.2
+  m_fontSize: 32.4
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5483,7 +5483,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.75
+  m_fontSize: 24.8
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
