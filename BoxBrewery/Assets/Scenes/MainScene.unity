@@ -153,10 +153,10 @@ RectTransform:
   - {fileID: 841367549}
   m_Father: {fileID: 1596837212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6603463, y: 0.517}
-  m_AnchorMax: {x: 1, y: 0.55600005}
-  m_AnchoredPosition: {x: 252.66995, y: 18.094}
-  m_SizeDelta: {x: 260.00595, y: 16.426502}
+  m_AnchorMin: {x: 0, y: 0.53028756}
+  m_AnchorMax: {x: 1, y: 0.666}
+  m_AnchoredPosition: {x: 0.00047302246, y: -0.000022888184}
+  m_SizeDelta: {x: 0.00099182, y: -0.000049591}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &38359523
 MonoBehaviour:
@@ -228,9 +228,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1577857137}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.009362497}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.17516708, y: 0.11907959}
+  m_AnchoredPosition: {x: -0.17516327, y: 0.11907959}
   m_SizeDelta: {x: -0.3503418, y: -0.23815918}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &74343513
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 6f1f041efebec3a4eb2af6b23372f1d2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -270,81 +270,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74343511}
-  m_CullTransparentMesh: 1
---- !u!1 &108505359
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 108505360}
-  - component: {fileID: 108505362}
-  - component: {fileID: 108505361}
-  m_Layer: 5
-  m_Name: bgpanel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &108505360
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108505359}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 716655989}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0024871826, y: 0}
-  m_SizeDelta: {x: -0.0050049, y: -0.000030518}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &108505361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108505359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.81040454, g: 0.99215686, b: 0.7411765, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &108505362
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108505359}
   m_CullTransparentMesh: 1
 --- !u!1 &128636317
 GameObject:
@@ -380,10 +305,10 @@ RectTransform:
   - {fileID: 1848660241}
   m_Father: {fileID: 1489156965}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.8598657, y: 0.87200004}
-  m_AnchorMax: {x: 0.9453463, y: 0.975}
-  m_AnchoredPosition: {x: -51.314056, y: 21.909967}
-  m_SizeDelta: {x: 39.91584, y: 41.014263}
+  m_AnchorMin: {x: 0.577515, y: 0}
+  m_AnchorMax: {x: 0.8176437, y: 0.97319186}
+  m_AnchoredPosition: {x: 0.04208374, y: 0.15357971}
+  m_SizeDelta: {x: -0.084, y: 0.30708}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &128636319
 MonoBehaviour:
@@ -481,10 +406,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 915130099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.23651947, y: 0.76400006}
-  m_AnchorMax: {x: 0.4696537, y: 0.86600006}
-  m_AnchoredPosition: {x: -56, y: -6}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.16184124, y: 0.748}
+  m_AnchorMax: {x: 0.39643916, y: 0.85}
+  m_AnchoredPosition: {x: 1.4999695, y: 1}
+  m_SizeDelta: {x: 0, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &139584398
 MonoBehaviour:
@@ -533,7 +458,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31.85
+  m_fontSize: 25.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -621,7 +546,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.32830733, y: 0.07300001}
   m_AnchorMax: {x: 0.44500002, y: 0.14762226}
-  m_AnchoredPosition: {x: 19.292, y: 0}
+  m_AnchoredPosition: {x: 19.291992, y: 0}
   m_SizeDelta: {x: 38.584, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &146101331
@@ -850,9 +775,9 @@ RectTransform:
   m_Father: {fileID: 2136429677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -19.283005}
-  m_SizeDelta: {x: 0, y: -7.2293015}
+  m_AnchorMax: {x: 1, y: 0.272}
+  m_AnchoredPosition: {x: 0, y: 0.5964966}
+  m_SizeDelta: {x: -0.6209984, y: -0.22930145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &204214350
 GameObject:
@@ -886,10 +811,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 980279355}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.16263603}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.117191315, y: 0.15851021}
-  m_SizeDelta: {x: -0.234375, y: 0.31700134}
+  m_AnchoredPosition: {x: 0.1171875, y: -0.000024795532}
+  m_SizeDelta: {x: -0.2344, y: -0.000045776}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &204214352
 MonoBehaviour:
@@ -911,7 +836,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 35416f675f205a040a47c64584be6753, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1042,10 +967,10 @@ RectTransform:
   - {fileID: 1414478668}
   m_Father: {fileID: 1596837212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6603463, y: 0.18900001}
-  m_AnchorMax: {x: 1, y: 0.238}
-  m_AnchoredPosition: {x: 251.91995, y: -88.3}
-  m_SizeDelta: {x: 260.00595, y: 16.24447}
+  m_AnchorMin: {x: 0, y: 0.24422084}
+  m_AnchorMax: {x: 0.98200005, y: 0.381}
+  m_AnchoredPosition: {x: 0.34048462, y: -0.2662964}
+  m_SizeDelta: {x: -0.681, y: 0.46530008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &281814727
 MonoBehaviour:
@@ -1117,10 +1042,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1272692702}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.13800001}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.14294052, y: -1.2374}
-  m_SizeDelta: {x: -0.2858963, y: 0.13297272}
+  m_AnchoredPosition: {x: 0.14760208, y: -0.035499573}
+  m_SizeDelta: {x: -0.2953, y: 0.07060003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &292763445
 MonoBehaviour:
@@ -1142,7 +1067,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b49cba80fc557d6419c7e0f14e0211d9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1194,10 +1119,10 @@ RectTransform:
   - {fileID: 1139144609}
   m_Father: {fileID: 1596837212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6603463, y: 0.18900001}
-  m_AnchorMax: {x: 1, y: 0.238}
-  m_AnchoredPosition: {x: 256.99994, y: -166}
-  m_SizeDelta: {x: 260, y: 18.0709}
+  m_AnchorMin: {x: 0.047000002, y: 0.07052695}
+  m_AnchorMax: {x: 1, y: 0.22373655}
+  m_AnchoredPosition: {x: -0.17500305, y: -0.5550232}
+  m_SizeDelta: {x: 0.3500061, y: 1.1607018}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &333702355
 MonoBehaviour:
@@ -1405,10 +1330,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 915130099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.23651947, y: 0.45800003}
-  m_AnchorMax: {x: 0.49300003, y: 0.7433956}
-  m_AnchoredPosition: {x: -56.954926, y: -4.048771}
-  m_SizeDelta: {x: -0.90719604, y: 3.3843994}
+  m_AnchorMin: {x: 0.16184124, y: 0.4394533}
+  m_AnchorMax: {x: 0.41831762, y: 0.748}
+  m_AnchoredPosition: {x: 1.0451355, y: -2.178299}
+  m_SizeDelta: {x: -0.907, y: -4.3566}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &380898636
 MonoBehaviour:
@@ -1457,7 +1382,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.85
+  m_fontSize: 23.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1541,10 +1466,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 915130099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 262, y: 50}
-  m_SizeDelta: {x: -734.5912, y: -393.38202}
+  m_AnchorMin: {x: 0.8043176, y: 0.54874396}
+  m_AnchorMax: {x: 0.84900004, y: 0.66917026}
+  m_AnchoredPosition: {x: 0.86099243, y: -0.86979675}
+  m_SizeDelta: {x: -0.86900043, y: 0.3576002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &400571606
 MonoBehaviour:
@@ -1593,10 +1518,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 29.1
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -1741,7 +1666,7 @@ RectTransform:
   m_Children:
   - {fileID: 573156859}
   - {fileID: 1504072100}
-  - {fileID: 405753063}
+  - {fileID: 1266795628}
   - {fileID: 1675942421}
   - {fileID: 587077627}
   - {fileID: 1596837212}
@@ -1755,85 +1680,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &405753062
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 405753063}
-  - component: {fileID: 405753065}
-  - component: {fileID: 405753064}
-  m_Layer: 5
-  m_Name: Cauldron
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &405753063
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405753062}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1266795628}
-  - {fileID: 469063730}
-  - {fileID: 1559498336}
-  - {fileID: 934759752}
-  m_Father: {fileID: 404241712}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -26.227997, y: -22}
-  m_SizeDelta: {x: -496.7646, y: -183.09}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &405753064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405753062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &405753065
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405753062}
-  m_CullTransparentMesh: 1
 --- !u!1 &445421356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,10 +1712,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1272692702}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -19.283005}
-  m_SizeDelta: {x: 0, y: -7.2293015}
+  m_AnchorMin: {x: 0, y: 0.038312655}
+  m_AnchorMax: {x: 0.93329114, y: 0.30662534}
+  m_AnchoredPosition: {x: -0.0053977966, y: -1.7116013}
+  m_SizeDelta: {x: 0.36999893, y: 0.13939953}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &445421358
 MonoBehaviour:
@@ -1995,17 +1841,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469063729}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 405753063}
+  m_Father: {fileID: 1266795628}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -120, y: 56}
-  m_SizeDelta: {x: 148.7677, y: 37.4034}
+  m_AnchorMin: {x: 0.23700002, y: 0.068}
+  m_AnchorMax: {x: 0.975, y: 0.22489244}
+  m_AnchoredPosition: {x: -0.6791611, y: -7.182968}
+  m_SizeDelta: {x: 0.3951, y: -8.2556}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &469063731
 MonoBehaviour:
@@ -2054,7 +1900,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.95
+  m_fontSize: 18
   m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2140,8 +1986,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.20000076, y: -2.1000004}
-  m_SizeDelta: {x: -0.3503418, y: 0.059410095}
+  m_AnchoredPosition: {x: -0.31489944, y: 3.2378998}
+  m_SizeDelta: {x: -0.3503, y: -6.2061}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &478075213
 MonoBehaviour:
@@ -2163,7 +2009,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: aeccb71fe1f2f1d49bc7b23ab614f155, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2214,9 +2060,9 @@ RectTransform:
   m_Father: {fileID: 841367549}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -17.575005}
-  m_SizeDelta: {x: 0, y: -7.2293015}
+  m_AnchorMax: {x: 1, y: 0.32200003}
+  m_AnchoredPosition: {x: 0, y: 0.08129883}
+  m_SizeDelta: {x: -0.4410019, y: 0.16270065}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &568903322
 MonoBehaviour:
@@ -2346,7 +2192,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 934759752}
   m_Father: {fileID: 404241712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2428,10 +2275,10 @@ RectTransform:
   - {fileID: 745858674}
   m_Father: {fileID: 404241712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -61.75, y: -38}
-  m_SizeDelta: {x: 326.06, y: 275.8728}
+  m_AnchorMin: {x: 0.18620978, y: 0.5623741}
+  m_AnchorMax: {x: 0.6414056, y: 1}
+  m_AnchoredPosition: {x: -0.25, y: 50}
+  m_SizeDelta: {x: 1.0599976, y: 99.8728}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &587077628
 MonoBehaviour:
@@ -2480,10 +2327,10 @@ RectTransform:
   - {fileID: 938005954}
   m_Father: {fileID: 915130099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.09351949, y: 0.42700002}
-  m_AnchorMax: {x: 0.17213422, y: 0.5394533}
-  m_AnchoredPosition: {x: -9, y: -108}
-  m_SizeDelta: {x: 2.2576904, y: -0.44269943}
+  m_AnchorMin: {x: 0.07976695, y: 0.122232884}
+  m_AnchorMax: {x: 0.16184124, y: 0.23657535}
+  m_AnchoredPosition: {x: -0.49975586, y: -0.2210083}
+  m_SizeDelta: {x: -0.7423096, y: -0.44270325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &678687013
 MonoBehaviour:
@@ -2613,10 +2460,10 @@ RectTransform:
   - {fileID: 1096742853}
   m_Father: {fileID: 915130099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.84369266, y: 0.4394533}
-  m_AnchorMax: {x: 0.9228658, y: 0.5394533}
-  m_AnchoredPosition: {x: 1.6288147, y: -89.149}
-  m_SizeDelta: {x: 3.2576904, y: 5.5573006}
+  m_AnchorMin: {x: 0.86031747, y: 0.16623288}
+  m_AnchorMax: {x: 0.9411626, y: 0.27517018}
+  m_AnchoredPosition: {x: 3.3160095, y: -0.36001587}
+  m_SizeDelta: {x: 2.2576904, y: 1.5572968}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &696970688
 MonoBehaviour:
@@ -2743,15 +2590,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 108505360}
   - {fileID: 1440614648}
   - {fileID: 1527874020}
   m_Father: {fileID: 404241712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.3745195, y: 0.14762226}
-  m_AnchorMax: {x: 0.66617316, y: 0.8688489}
-  m_AnchoredPosition: {x: 164, y: 23}
-  m_SizeDelta: {x: 80.897, y: 2.626}
+  m_AnchorMin: {x: 0.5475945, y: 0.20400001}
+  m_AnchorMax: {x: 0.9516015, y: 0.92851406}
+  m_AnchoredPosition: {x: 0.5, y: -0.5}
+  m_SizeDelta: {x: -0.102996826, y: 1.6259995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &716655990
 MonoBehaviour:
@@ -2936,7 +2782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91a5dd3d79f0dc44f8d45053e6f23c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 0}
+  _gameManager: {fileID: 1429120686}
   _dropClip: {fileID: 7400000, guid: 6d5786f31cb3a3e4289401f8a74ba9eb, type: 2}
 --- !u!95 &745858678
 Animator:
@@ -3011,7 +2857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91a5dd3d79f0dc44f8d45053e6f23c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 0}
+  _gameManager: {fileID: 1429120686}
   _dropClip: {fileID: 7400000, guid: 6d5786f31cb3a3e4289401f8a74ba9eb, type: 2}
 --- !u!95 &759683834
 Animator:
@@ -3103,14 +2949,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1495020742}
   - {fileID: 1190724242}
+  - {fileID: 1495020742}
   m_Father: {fileID: 1489156965}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7156926, y: 0.87200004}
-  m_AnchorMax: {x: 0.80248064, y: 0.975}
-  m_AnchoredPosition: {x: -120.85751, y: 21.909967}
-  m_SizeDelta: {x: 39.544846, y: 41.014263}
+  m_AnchorMin: {x: 0.18654034, y: 0}
+  m_AnchorMax: {x: 0.4148713, y: 1}
+  m_AnchoredPosition: {x: -0.000022888184, y: -0.26620483}
+  m_SizeDelta: {x: -0.0000076293945, y: -0.53250027}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &780952163
 MonoBehaviour:
@@ -3329,10 +3175,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1139144609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.187}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.14294052, y: -1.2374}
-  m_SizeDelta: {x: -0.2858963, y: 0.13297272}
+  m_AnchoredPosition: {x: 0.0000019073486, y: -0.21920013}
+  m_SizeDelta: {x: 0.0000038147, y: 0.4384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &817273118
 MonoBehaviour:
@@ -3354,7 +3200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b477ed5bc4f466d469b85d0ae10d4017, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3402,14 +3248,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 568903321}
   - {fileID: 1928151233}
+  - {fileID: 568903321}
   m_Father: {fileID: 38359522}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.8598657, y: 0.55600005}
-  m_AnchorMax: {x: 0.9453463, y: 0.66400003}
-  m_AnchoredPosition: {x: -50.812164, y: 28.290577}
-  m_SizeDelta: {x: 39.58525, y: 39.513348}
+  m_AnchorMin: {x: 0.5403486, y: 0}
+  m_AnchorMax: {x: 0.76420194, y: 1}
+  m_AnchoredPosition: {x: 0.40000153, y: 0.7802887}
+  m_SizeDelta: {x: 0.5853, y: 1.5606}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &841367550
 MonoBehaviour:
@@ -3600,7 +3446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potions: []
-  unknownpotion: {fileID: -1868737730, guid: ff8ec0be743ea3946b5b83149dedb7a2, type: 3}
+  unknownpotion: {fileID: 21300000, guid: 9aeb16813f767b64686973aff89f54d5, type: 3}
   image: {fileID: 2073836438}
   namelabel: {fileID: 139584398}
   description: {fileID: 380898636}
@@ -3633,16 +3479,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934759751}
-  m_LocalRotation: {x: -0.75407946, y: 0, z: 0, w: 0.6567832}
-  m_LocalPosition: {x: 0, y: 0, z: -101.999985}
+  m_LocalRotation: {x: -0.75407946, y: -0, z: -0, w: 0.6567832}
+  m_LocalPosition: {x: 0, y: 0, z: -102}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 405753063}
+  m_Father: {fileID: 573156859}
   m_LocalEulerAnglesHint: {x: -97.89, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -42, y: 36.455}
+  m_AnchorMin: {x: 0.40439862, y: 0.53245807}
+  m_AnchorMax: {x: 0.40439862, y: 0.53245807}
+  m_AnchoredPosition: {x: -0.22799683, y: 1.4550037}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!199 &934759753
@@ -3669,7 +3515,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
+  - {fileID: 2100000, guid: 09fae04439f92634fb7130cbed06ca50, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3730,7 +3576,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934759751}
   serializedVersion: 8
-  lengthInSec: 0.1
+  lengthInSec: 1.2
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -4559,7 +4405,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4989,7 +4835,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   ColorModule:
-    enabled: 1
+    enabled: 0
     gradient:
       serializedVersion: 2
       minMaxState: 1
@@ -8611,14 +8457,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1653461968}
   - {fileID: 204214351}
+  - {fileID: 1653461968}
   m_Father: {fileID: 38359522}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7063075, y: 0.55600005}
-  m_AnchorMax: {x: 0.7848269, y: 0.66400003}
-  m_AnchoredPosition: {x: -104.90692, y: 27.539558}
-  m_SizeDelta: {x: 42.263313, y: 39.513348}
+  m_AnchorMin: {x: 0.09836515, y: 0.043384746}
+  m_AnchorMax: {x: 0.32244954, y: 1}
+  m_AnchoredPosition: {x: 0.41584778, y: 0.00009536743}
+  m_SizeDelta: {x: 0.8317, y: 0.00019836}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &980279356
 MonoBehaviour:
@@ -8854,10 +8700,10 @@ RectTransform:
   - {fileID: 1591075937}
   m_Father: {fileID: 333702354}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7156926, y: 0.238}
-  m_AnchorMax: {x: 0.80248064, y: 0.33600003}
-  m_AnchoredPosition: {x: -125.623535, y: 35.023483}
-  m_SizeDelta: {x: 39.209717, y: 40.39931}
+  m_AnchorMin: {x: 0.14928885, y: 0}
+  m_AnchorMax: {x: 0.35413346, y: 1}
+  m_AnchoredPosition: {x: 2.6737, y: 0.026821136}
+  m_SizeDelta: {x: 5.3474, y: 0.0537}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1139144610
 CanvasRenderer:
@@ -9091,10 +8937,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 780952162}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -17.632004}
-  m_SizeDelta: {x: 0, y: -7.2293015}
+  m_AnchorMin: {x: 0, y: 0.034856576}
+  m_AnchorMax: {x: 1, y: 0.2038566}
+  m_AnchoredPosition: {x: 0.13599014, y: -0.099998474}
+  m_SizeDelta: {x: -0.39800072, y: 0.26500034}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1190724243
 MonoBehaviour:
@@ -9220,17 +9066,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266795627}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 405753063}
+  m_Children:
+  - {fileID: 469063730}
+  - {fileID: 1559498336}
+  m_Father: {fileID: 404241712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -99.24002, y: -24}
-  m_SizeDelta: {x: 200.9407, y: 220.9095}
+  m_AnchorMin: {x: 0.0322028, y: 0.11051399}
+  m_AnchorMax: {x: 0.30900002, y: 0.65715}
+  m_AnchoredPosition: {x: 0.9145508, y: 1}
+  m_SizeDelta: {x: 2.9407043, y: 0.9095001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1266795629
 MonoBehaviour:
@@ -9304,10 +9152,10 @@ RectTransform:
   - {fileID: 445421357}
   m_Father: {fileID: 281814726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7156926, y: 0.238}
-  m_AnchorMax: {x: 0.80248064, y: 0.33600003}
-  m_AnchoredPosition: {x: -101.86261, y: 35.302986}
-  m_SizeDelta: {x: 39.209213, y: 40.5783}
+  m_AnchorMin: {x: 0.1283509, y: 0.038312696}
+  m_AnchorMax: {x: 0.33834496, y: 1}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0.000019073486}
+  m_SizeDelta: {x: 0.000038147, y: 0.000053406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1272692703
 MonoBehaviour:
@@ -9405,10 +9253,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1307614970}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.20167542}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.14294052, y: -1.2374}
-  m_SizeDelta: {x: -0.2858963, y: 0.13297272}
+  m_AnchoredPosition: {x: -0.07690048, y: 0.25709915}
+  m_SizeDelta: {x: 0, y: -0.398}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1298647284
 MonoBehaviour:
@@ -9430,7 +9278,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 458fe5cec4152024a99040fa2b1ca469, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9482,10 +9330,10 @@ RectTransform:
   - {fileID: 2039673846}
   m_Father: {fileID: 1945473623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7156926, y: 0.238}
-  m_AnchorMax: {x: 0.80248064, y: 0.33600003}
-  m_AnchoredPosition: {x: -140.36261, y: 36.51557}
-  m_SizeDelta: {x: 39.209213, y: 40.6763}
+  m_AnchorMin: {x: 0.128, y: 0}
+  m_AnchorMax: {x: 0.3363118, y: 1}
+  m_AnchoredPosition: {x: 0.098098755, y: 0.228199}
+  m_SizeDelta: {x: -2, y: -0.6685}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1307614971
 CanvasRenderer:
@@ -9584,9 +9432,9 @@ RectTransform:
   m_Father: {fileID: 1891966884}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -18.141006}
-  m_SizeDelta: {x: 0, y: -7.2293015}
+  m_AnchorMax: {x: 0.96983635, y: 0.24100001}
+  m_AnchoredPosition: {x: 0.000011444092, y: 0.29190063}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1374691688
 MonoBehaviour:
@@ -9720,9 +9568,9 @@ RectTransform:
   m_Father: {fileID: 128636318}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -17.632004}
-  m_SizeDelta: {x: 0, y: -7.2293015}
+  m_AnchorMax: {x: 1, y: 0.2592161}
+  m_AnchoredPosition: {x: 0.09220123, y: -0.15499496}
+  m_SizeDelta: {x: 0.2859993, y: -0.31100082}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1377014743
 MonoBehaviour:
@@ -9853,14 +9701,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1803487717}
   - {fileID: 1773334963}
+  - {fileID: 1803487717}
   m_Father: {fileID: 281814726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.874, y: 0.238}
-  m_AnchorMax: {x: 0.9547315, y: 0.3463778}
-  m_AnchoredPosition: {x: -50.50454, y: 33.75811}
-  m_SizeDelta: {x: 41.318974, y: 40.650753}
+  m_AnchorMin: {x: 0.62200004, y: 0}
+  m_AnchorMax: {x: 0.804, y: 0.93500006}
+  m_AnchoredPosition: {x: 0.47850037, y: -0.0000076293945}
+  m_SizeDelta: {x: -0.4419999, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1414478669
 MonoBehaviour:
@@ -9926,6 +9774,690 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414478667}
   m_CullTransparentMesh: 1
+--- !u!1 &1429120685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1429120687}
+  - component: {fileID: 1429120686}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1429120686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429120685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bd36bb88481b1245895fe2999e34324, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potions:
+  - index: 0
+    name: Slop
+    sprite: {fileID: 21300000, guid: 07a3436e22ab706489d6788053d2c861, type: 3}
+    owned: 0
+    description: This potion has no effects nor value. It's pretty, though!
+    ingredients: []
+    unlocked: 1
+  - index: 1
+    name: Sleep Potion
+    sprite: {fileID: 21300000, guid: ad71633a066156f45b6a5fdf7146d1ad, type: 3}
+    owned: 0
+    description: For drifting dreams and heavy eyes, find some cooling leaves swimming
+      through the skies!
+    ingredients:
+    - index: 0
+      name: Springwater
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 1
+      name: Moon Mint
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    unlocked: 0
+  - index: 2
+    name: Silverleaf Salve
+    sprite: {fileID: 21300000, guid: 1d18e69705b03ac46803c6661b539351, type: 3}
+    owned: 0
+    description: With silver leaves and spiky sprigs, relief will bloom where pain
+      now digs!
+    ingredients:
+    - index: 1
+      name: Moon Mint
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 2
+      name: Star Thyme
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 3
+    name: Webwalker Tonic
+    sprite: {fileID: 21300000, guid: 7902a92f422cdb6478f55c27d8289350, type: 3}
+    owned: 0
+    description: Mix threads of satin with streams, climb and run as fast as you
+      please!
+    ingredients:
+    - index: 0
+      name: Springwater
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 3
+      name: Spider Silk
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 4
+    name: Invisibility Elixir
+    sprite: {fileID: 21300000, guid: c8a684eb81ec9ef45a376037932e0859, type: 3}
+    owned: 0
+    description: With sprigs or spices swimming through the violet haze, melt from
+      sight in shadowy ways!
+    ingredients:
+    - index: 0
+      name: Springwater
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 2
+      name: Star Thyme
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 4
+      name: Lavender Smoke
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 5
+    name: Dreamcatcher Daze
+    sprite: {fileID: 21300000, guid: 455cc142114885a469f905264727fa01, type: 3}
+    owned: 0
+    description: A web to catch the scary dreams, while cooling leaves cap all the
+      seams
+    ingredients:
+    - index: 1
+      name: Moon Mint
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 3
+      name: Spider Silk
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 5
+      name: Dreamcap Mushroom
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 6
+    name: Mind's Brew
+    sprite: {fileID: 21300000, guid: 2f7a0cae8f836ff4ebff3031bf70505d, type: 3}
+    owned: 0
+    description: "Add silver leaves and purple haze, and splashes of nature to end
+      your maze! Sip this brew, and you\u2019ll clearly recall, every secret, every
+      detail, big or small!"
+    ingredients:
+    - index: 0
+      name: Springwater
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 1
+      name: Moon Mint
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 4
+      name: Lavender Smoke
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 7
+    name: Liquid Luck
+    sprite: {fileID: 21300000, guid: 8394f2d3c5d294a4082f0917c60bc26b, type: 3}
+    owned: 0
+    description: Use satin threads, squishy caps, and charming sprouts alike, soon
+      you shall see all the luck in the world shall strike!
+    ingredients:
+    - index: 3
+      name: Spider Silk
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 5
+      name: Dreamcap Mushroom
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 6
+      name: Charm Clovers
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 8
+    name: Enamour Elixir
+    sprite: {fileID: 21300000, guid: ebdddf7f1f8602944ac97d563be67965, type: 3}
+    owned: 0
+    description: With stars in your eyes and a purple cloud of emotion, soon your
+      favorite fellow will be stuck in your web with this potion!
+    ingredients:
+    - index: 2
+      name: Star Thyme
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 3
+      name: Spider Silk
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 4
+      name: Lavender Smoke
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 9
+    name: Giggling Tonic
+    sprite: {fileID: 21300000, guid: aea974c823a226343962d8851fe678e3, type: 3}
+    owned: 0
+    description: In a great purple haze with four-leafed figures all around, find
+      a dreamy fun-guy and have laughter you cannot bound!
+    ingredients:
+    - index: 4
+      name: Lavender Smoke
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 5
+      name: Dreamcap Mushroom
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 6
+      name: Charm Clovers
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 10
+    name: Truthful Tonic
+    sprite: {fileID: 21300000, guid: c9ab0977a93dba540bbcc38ee0274eb8, type: 3}
+    owned: 0
+    description: Amongst the night-time figures you find in the garden, seek four
+      leaves to find the truths that you must pardon.
+    ingredients:
+    - index: 1
+      name: Moon Mint
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 2
+      name: Star Thyme
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 6
+      name: Charm Clovers
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 11
+    name: Hypnosis Potion
+    sprite: {fileID: 21300000, guid: df8edef5ccdaffa41ac83cef75d7e794, type: 3}
+    owned: 0
+    description: With the mixture of stars and dreams alike, you can make anyone
+      fall into your web of psych!
+    ingredients:
+    - index: 2
+      name: Star Thyme
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 3
+      name: Spider Silk
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 5
+      name: Dreamcap Mushroom
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 12
+    name: Forgetful Draught
+    sprite: {fileID: 21300000, guid: df8edef5ccdaffa41ac83cef75d7e794, type: 3}
+    owned: 0
+    description: Have nature's streams guide the indigo haze, to the lucid fun-guys
+      who move in a daze, for now we seek our own version of the stars, small glittering
+      particles to make your memory scatter afar!
+    ingredients:
+    - index: 0
+      name: Springwater
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 4
+      name: Lavender Smoke
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 5
+      name: Dreamcap Mushroom
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 13
+    name: Invincibility Elixir
+    sprite: {fileID: 21300000, guid: 8e4ccc2a0770b2a46b655bbf53528096, type: 3}
+    owned: 0
+    description: "Beneath the moon\u2019s leaves of soft silver light, and satin
+      fibers spun through the night, Add golden sparks that flicker bright, and feel
+      your strength as none can smite. Not to be confused with Invisibility Elixir."
+    ingredients:
+    - index: 1
+      name: Moon Mint
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 3
+      name: Spider Silk
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 6
+      name: Charm Clovers
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 14
+    name: Levitation Serum
+    sprite: {fileID: 21300000, guid: 93018100c9d2993439f60e01853e9742, type: 3}
+    owned: 0
+    description: Within the dark, thick, purple mist, among the four leaves that
+      barely exist, with glowing particles of flight and fluff from above, get granted
+      the power of flight like a dove!
+    ingredients:
+    - index: 4
+      name: Lavender Smoke
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 6
+      name: Charm Clovers
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 8
+      name: White Owl Feather
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 15
+    name: Owl's Eye Elixir
+    sprite: {fileID: 21300000, guid: e3540dd6a956e9443a776ad6d42dee3c, type: 3}
+    owned: 0
+    description: With moonlit leaves and satin threads so fine, seek glowing particles
+      so bright they shine. Finally add the quill that may softly sway, so you have
+      perfect vision as night turns day!
+    ingredients:
+    - index: 1
+      name: Moon Mint
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 3
+      name: Spider Silk
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 8
+      name: White Owl Feather
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 16
+    name: Aging Brew
+    sprite: {fileID: 21300000, guid: cecf4900b7e8de141bb81830bb58ddf2, type: 3}
+    owned: 0
+    description: Mix nature's streams with glowing particles in the sky, add pale
+      leaves to ultimately make your age jump up high, but beware, this effect lasts
+      not too long, for being stuck in this state will just be nature's wrong!
+    ingredients:
+    - index: 0
+      name: Springwater
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 9
+      name: Ghost Fern
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: 17
+    name: Water Breathing Potion
+    sprite: {fileID: 21300000, guid: bb89f92893612224ea2f2f1d991cf8e8, type: 3}
+    owned: 0
+    description: 'A sip from bodies, both narrow and small, with satin threads that
+      can wind quite tall, add the lucky four with a small pale green leaf, and soon
+      you shall breathe underwater like a reef! '
+    ingredients:
+    - index: 0
+      name: Springwater
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 3
+      name: Spider Silk
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 6
+      name: Charm Clovers
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 9
+      name: Ghost Fern
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  - index: -1
+    name: Polymorph Potion
+    sprite: {fileID: 21300000, guid: 8857429066d5629448fc880de7b4ac34, type: 3}
+    owned: 0
+    description: Over violet skies, silence flies; with ghostly tails and glowing
+      trails; And look within, the secret spice? The heart of which is very nice.
+      Mix these all and you shall be; from paw to hand quite easily!
+    ingredients:
+    - index: 4
+      name: Lavender Smoke
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: -39
+    - index: 8
+      name: White Owl Feather
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 9
+      name: Ghost Fern
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    - index: 10
+      name: Ambergold Pollen
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+    unlocked: 0
+  inventory:
+  - index: 0
+    name: Springwater
+    sprite: {fileID: 21300000, guid: 29d30faf3c24d93488757d2d9596113f, type: 3}
+    owned: -39
+  - index: 1
+    name: Moon Mint
+    sprite: {fileID: 21300000, guid: ec158f95e4382d34eacae5bab51eeb93, type: 3}
+    owned: -39
+  - index: 2
+    name: Star Thyme
+    sprite: {fileID: 21300000, guid: 6f1f041efebec3a4eb2af6b23372f1d2, type: 3}
+    owned: 10
+  - index: 3
+    name: Spider Silk
+    sprite: {fileID: 21300000, guid: 35416f675f205a040a47c64584be6753, type: 3}
+    owned: 0
+  - index: 4
+    name: Lavender Smoke
+    sprite: {fileID: 21300000, guid: 9366b1f7b45fd4443be94f56da9655a0, type: 3}
+    owned: 0
+  - index: 5
+    name: Dreamcap Mushroom
+    sprite: {fileID: 21300000, guid: 458fe5cec4152024a99040fa2b1ca469, type: 3}
+    owned: 0
+  - index: 6
+    name: Charm Clovers
+    sprite: {fileID: 21300000, guid: aeccb71fe1f2f1d49bc7b23ab614f155, type: 3}
+    owned: 0
+  - index: 7
+    name: Firefly Dust
+    sprite: {fileID: 21300000, guid: b49cba80fc557d6419c7e0f14e0211d9, type: 3}
+    owned: 0
+  - index: 8
+    name: White Owl Feathers
+    sprite: {fileID: 21300000, guid: 1e5a4a9e9313f51439a8e5fe2b9a4ea7, type: 3}
+    owned: 0
+  - index: 9
+    name: Ghost Fern
+    sprite: {fileID: 21300000, guid: b477ed5bc4f466d469b85d0ae10d4017, type: 3}
+    owned: 0
+  - index: 10
+    name: Ambergold Pollen
+    sprite: {fileID: 21300000, guid: 0e01dffc594426c419540cc55bb41d7f, type: 3}
+    owned: 0
+  greeted: 0
+  customers:
+  - name: Hyper Rabbit
+    request: Do you have anything that'll help me take a quick nap?
+    response: Thanks! I'm gonna sleep well before my race today!
+    sadresponse: Oh...that's alright....
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 1
+      name: Sleep Potion
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 2
+      name: Star Thyme
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+  - name: Mother Opossum
+    request: I've been having back pain recently...anything you got that can help?
+    response: Oh, thank you so much! I can carry my children longer now!
+    sadresponse: Well, the kids are getting too big to carry anyways...
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 2
+      name: Silverleaf Salve
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 3
+      name: Spider Silk
+      sprite: {fileID: 0}
+      owned: 0
+  - name: Slow Turtle
+    request: I just wish I could run as fast as Rabbit.
+    response: Thanks. Who knows, maybe I'll even win my race today?
+    sadresponse: I guess I'll just always be a Slow Turtle.
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 3
+      name: Webwalker Tonic
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 4
+      name: Lavender Smoke
+      sprite: {fileID: 0}
+      owned: 0
+  - name: Trashy Raccoon
+    request: Hey, say I needed to...sneak into a couple of backyards. Could you help
+      a brother out?
+    response: Awww yeah, you're the best! I owe you one!
+    sadresponse: Dang. Snitch.
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 4
+      name: Invisibility Elixir
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 5
+      name: Dreamcap Mushroom
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 5
+      name: Dreamcap Mushroom
+      sprite: {fileID: 0}
+      owned: 0
+  - name: Rain Frog
+    request: The winds speak to me in my dreams...the winds are scary...
+    response: Thank you kindly...blessings upon your soul...
+    sadresponse: So I am destined to a life of restless suffering...
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 5
+      name: Dreamcatcher Daze
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 6
+      name: Charm Clovers
+      sprite: {fileID: 0}
+      owned: 0
+  - name: Forgetful Squirrel
+    request: Help!! I've forgotten where I buried my acorns!!!
+    response: So THAT'S where I left them! Thank you!!
+    sadresponse: What if I starve this winter??
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 6
+      name: Mind's Brew
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 8
+      name: White Owl Feathers
+      sprite: {fileID: 0}
+      owned: 0
+  - name: Shy Crow
+    request: I don't want to be bad luck anymore.
+    response: Thank you, really. You don't know how much this means to me.
+    sadresponse: That's ok. It's probably hopeless for me, anyways.
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 7
+      name: Liquid Luck
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 10
+      name: Ambergold Pollen
+      sprite: {fileID: 0}
+      owned: 0
+  - name: Gruff Duck
+    request: Need wife.
+    response: Hmm. Good.
+    sadresponse: You wife?
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 8
+      name: Enamour Elixir
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 7
+      name: Firefly Dust
+      sprite: {fileID: 0}
+      owned: 0
+  - name: Mortified Beaver
+    request: I just saw my brother bathing in the lake. You got any bleach?
+    response: Ignorance truly is bliss...
+    sadresponse: ...Bleach it is.
+    sprite: {fileID: 1073105830, guid: a0051f6a9115b7943adfafa7cffc2855, type: 3}
+    potion:
+      index: 12
+      name: Forgetful Draught
+      sprite: {fileID: 21300000, guid: 21727828c102dbb4fa666b8831987743, type: 3}
+      owned: 0
+      description: 
+      ingredients: []
+      unlocked: 0
+    ingredients:
+    - index: 9
+      name: Ghost Fern
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 8
+      name: White Owl Feathers
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 8
+      name: White Owl Feathers
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 8
+      name: White Owl Feathers
+      sprite: {fileID: 0}
+      owned: 0
+    - index: 10
+      name: Ambergold Pollen
+      sprite: {fileID: 0}
+      owned: 0
+  offcooldown: 1
+  firstentry: 1
+--- !u!4 &1429120687
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429120685}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 279.96487, y: 284.56805, z: -2.747396}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440614647
 GameObject:
   m_ObjectHideFlags: 0
@@ -9958,10 +10490,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 716655989}
   m_LocalEulerAnglesHint: {x: 15.24, y: 15, z: -1.5}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.327332, y: -24.447327}
-  m_SizeDelta: {x: -56.014656, y: -26.505344}
+  m_AnchorMin: {x: 0.048, y: 0.5}
+  m_AnchorMax: {x: 0.77587265, y: 0.85300004}
+  m_AnchoredPosition: {x: -1.3400116, y: 3.355568}
+  m_SizeDelta: {x: -3.8639984, y: 1.692}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1440614649
 MonoBehaviour:
@@ -10012,10 +10544,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 35.3
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -10096,10 +10628,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 915130099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -80, y: -80}
+  m_AnchorMin: {x: 0.049878366, y: 0.035280365}
+  m_AnchorMax: {x: 0.94856083, y: 0.90889364}
+  m_AnchoredPosition: {x: 0.5, y: -0.35998535}
+  m_SizeDelta: {x: -1, y: 0.7199993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1480418197
 MonoBehaviour:
@@ -10173,10 +10705,10 @@ RectTransform:
   - {fileID: 128636318}
   m_Father: {fileID: 1596837212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6688269, y: 0.837}
-  m_AnchorMax: {x: 1, y: 0.87200004}
-  m_AnchoredPosition: {x: 252.35995, y: 138.6}
-  m_SizeDelta: {x: 260.62518, y: 15.899286}
+  m_AnchorMin: {x: 0, y: 0.84684604}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.05747986, y: -0.010009766}
+  m_SizeDelta: {x: -0.115, y: -0.020000458}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1489156966
 MonoBehaviour:
@@ -10248,10 +10780,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 780952162}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.16900001}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.045967102, y: 0.00029945374}
-  m_SizeDelta: {x: -0.28590012, y: -0.2750001}
+  m_AnchoredPosition: {x: -0.0315094, y: 0.0821991}
+  m_SizeDelta: {x: -0.063, y: -0.16399956}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1495020743
 MonoBehaviour:
@@ -10273,7 +10805,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 29d30faf3c24d93488757d2d9596113f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10325,10 +10857,10 @@ RectTransform:
   - {fileID: 1869642591}
   m_Father: {fileID: 404241712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.127, y: 0.71825606}
-  m_AnchorMax: {x: 0.22900002, y: 0.95500004}
-  m_AnchoredPosition: {x: 0.013061523, y: -0.5}
-  m_SizeDelta: {x: 0.22680664, y: 3.4442139}
+  m_AnchorMin: {x: 0.14280418, y: 0.6867061}
+  m_AnchorMax: {x: 0.2543986, y: 0.94851404}
+  m_AnchoredPosition: {x: -1.4869385, y: 0.5}
+  m_SizeDelta: {x: 1.226799, y: 3.4441986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1504072101
 MonoBehaviour:
@@ -10457,10 +10989,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 716655989}
   m_LocalEulerAnglesHint: {x: 0, y: 1.5, z: 6}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 26, y: 80}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchorMin: {x: 0.23531815, y: 0}
+  m_AnchorMax: {x: 0.8716781, y: 0.637}
+  m_AnchoredPosition: {x: 0.30000305, y: 0}
+  m_SizeDelta: {x: -20.6208, y: -19.2392}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1527874021
 MonoBehaviour:
@@ -10611,7 +11143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91a5dd3d79f0dc44f8d45053e6f23c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 0}
+  _gameManager: {fileID: 1429120686}
   _dropClip: {fileID: 7400000, guid: 6d5786f31cb3a3e4289401f8a74ba9eb, type: 2}
 --- !u!95 &1554415184
 Animator:
@@ -10667,10 +11199,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 915130099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 262, y: 103.23099}
-  m_SizeDelta: {x: -690.887, y: -393.382}
+  m_AnchorMin: {x: 0.77459794, y: 0.6488658}
+  m_AnchorMax: {x: 0.8885609, y: 0.78900003}
+  m_AnchoredPosition: {x: 3.0827026, y: -1.2269897}
+  m_SizeDelta: {x: 1.2785001, y: 1.5349998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1556837658
 MonoBehaviour:
@@ -10719,10 +11251,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 34.55
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -10797,17 +11329,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559498335}
-  m_LocalRotation: {x: -0.07354578, y: 0.03306532, z: 0.0024397667, w: 0.9967406}
+  m_LocalRotation: {x: 0.03306532, y: 0.07354578, z: -0.9967406, w: 0.0024397667}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 405753063}
+  m_Father: {fileID: 1266795628}
   m_LocalEulerAnglesHint: {x: -8.44, y: 3.8, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -100.69998, y: -34.4}
-  m_SizeDelta: {x: 147.9113, y: 137.923}
+  m_AnchorMin: {x: 0.132, y: 0.24300002}
+  m_AnchorMax: {x: 0.87482584, y: 0.8532314}
+  m_AnchoredPosition: {x: 0.7226944, y: 0.50759125}
+  m_SizeDelta: {x: -1.3057098, y: 3.5265198}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1559498337
 MonoBehaviour:
@@ -10954,9 +11486,9 @@ RectTransform:
   m_Father: {fileID: 1577857137}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -17.708}
-  m_SizeDelta: {x: 0, y: -7.2293015}
+  m_AnchorMax: {x: 1, y: 0.252}
+  m_AnchoredPosition: {x: 0.0000038146973, y: -2.5000076}
+  m_SizeDelta: {x: 0.0000076294, y: 0.771}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1574317547
 MonoBehaviour:
@@ -11091,10 +11623,10 @@ RectTransform:
   - {fileID: 74343512}
   m_Father: {fileID: 2028411228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7848269, y: 0.70900005}
-  m_AnchorMax: {x: 0.86700004, y: 0.814}
-  m_AnchoredPosition: {x: -89.77414, y: 25.367693}
-  m_SizeDelta: {x: 40.93347, y: 40.497414}
+  m_AnchorMin: {x: 0.38300002, y: 0.12453048}
+  m_AnchorMax: {x: 0.611, y: 0.95100003}
+  m_AnchoredPosition: {x: 0.000022888184, y: -0.0000038146973}
+  m_SizeDelta: {x: 0.000030518, y: -0.000015259}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1577857138
 MonoBehaviour:
@@ -11292,9 +11824,9 @@ RectTransform:
   m_Father: {fileID: 1139144609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -19.283005}
-  m_SizeDelta: {x: 0, y: -7.2293015}
+  m_AnchorMax: {x: 1, y: 0.25500003}
+  m_AnchoredPosition: {x: 0.000024795532, y: 0.38529968}
+  m_SizeDelta: {x: 0.58000183, y: 0.77070045}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1596837211
 GameObject:
@@ -11333,10 +11865,10 @@ RectTransform:
   - {fileID: 333702354}
   m_Father: {fileID: 404241712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.67281824, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -752, y: -382}
+  m_AnchoredPosition: {x: 0.381958, y: -0.5000305}
+  m_SizeDelta: {x: -0.76400757, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1596837213
 MonoBehaviour:
@@ -11413,10 +11945,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 915130099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.23651947, y: 0.141}
-  m_AnchorMax: {x: 0.75417316, y: 0.41247115}
-  m_AnchoredPosition: {x: 149.61, y: 37.31601}
-  m_SizeDelta: {x: -144.81, y: -1.914}
+  m_AnchorMin: {x: 0.5358041, y: 0.27517018}
+  m_AnchorMax: {x: 0.86031747, y: 0.5394533}
+  m_AnchoredPosition: {x: -9.289505, y: 1.5429993}
+  m_SizeDelta: {x: -7.3891, y: 3.086}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1599755167
 MonoBehaviour:
@@ -11469,7 +12001,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.95
+  m_fontSize: 34.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11554,9 +12086,9 @@ RectTransform:
   m_Father: {fileID: 980279355}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -17.575005}
-  m_SizeDelta: {x: 0, y: -7.2293015}
+  m_AnchorMax: {x: 1, y: 0.325728}
+  m_AnchoredPosition: {x: 0.15299988, y: -0.00002670288}
+  m_SizeDelta: {x: -0.306, y: 0.000049591}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1653461969
 MonoBehaviour:
@@ -11692,9 +12224,9 @@ RectTransform:
   m_Father: {fileID: 404241712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.32830733, y: 0.18900001}
-  m_AnchorMax: {x: 0.45082685, y: 0.272}
-  m_AnchoredPosition: {x: 17.209106, y: 0}
-  m_SizeDelta: {x: 34.4182, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0.272}
+  m_AnchoredPosition: {x: -0.29089355, y: 0}
+  m_SizeDelta: {x: -0.58179855, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1675942422
 MonoBehaviour:
@@ -11879,7 +12411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91a5dd3d79f0dc44f8d45053e6f23c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 0}
+  _gameManager: {fileID: 1429120686}
   _dropClip: {fileID: 7400000, guid: 6d5786f31cb3a3e4289401f8a74ba9eb, type: 2}
 --- !u!95 &1677093145
 Animator:
@@ -12071,10 +12603,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1414478668}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.287}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.060424805, y: 0.43246078}
-  m_SizeDelta: {x: -0.12088013, y: -0.86494446}
+  m_AnchoredPosition: {x: 0.060424805, y: -0.000005722046}
+  m_SizeDelta: {x: -0.1209, y: 0.0000038147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1773334964
 MonoBehaviour:
@@ -12096,7 +12628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 1e5a4a9e9313f51439a8e5fe2b9a4ea7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12147,9 +12679,9 @@ RectTransform:
   m_Father: {fileID: 1414478668}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -17.289001}
-  m_SizeDelta: {x: 0, y: -7.2293015}
+  m_AnchorMax: {x: 1, y: 0.287}
+  m_AnchoredPosition: {x: 0.22029877, y: 0.8247986}
+  m_SizeDelta: {x: 0.44099998, y: -1.2293}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1803487718
 MonoBehaviour:
@@ -12282,10 +12814,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 128636318}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.18717588}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.08544922, y: 0}
-  m_SizeDelta: {x: -0.17086792, y: -0.27500153}
+  m_AnchoredPosition: {x: 0.08544922, y: -0.024999619}
+  m_SizeDelta: {x: -0.171, y: -0.22599983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1848660242
 MonoBehaviour:
@@ -12307,7 +12839,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ec158f95e4382d34eacae5bab51eeb93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12357,10 +12889,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1504072100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.19973719, y: 0.27273065}
-  m_AnchorMax: {x: 0.94417524, y: 0.7353838}
-  m_AnchoredPosition: {x: -0.7999878, y: -0.5}
-  m_SizeDelta: {x: -1.8740997, y: -1.6537018}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 5.700001, y: 0}
+  m_SizeDelta: {x: -24.8741, y: -66.6537}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1869642592
 MonoBehaviour:
@@ -12409,7 +12941,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.4
+  m_fontSize: 22.6
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12627,14 +13159,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1374691687}
   - {fileID: 478075212}
+  - {fileID: 1374691687}
   m_Father: {fileID: 1945473623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7848269, y: 0.40600002}
-  m_AnchorMax: {x: 0.86700004, y: 0.5}
-  m_AnchoredPosition: {x: -40.25299, y: 30.428703}
-  m_SizeDelta: {x: 41.006958, y: 41.10259}
+  m_AnchorMin: {x: 0.565, y: 0}
+  m_AnchorMax: {x: 0.7522877, y: 1}
+  m_AnchoredPosition: {x: 0.09270096, y: 0.07822418}
+  m_SizeDelta: {x: 0.9093, y: -0.15644956}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1891966885
 MonoBehaviour:
@@ -12887,8 +13419,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.08544922, y: 0.15851021}
-  m_SizeDelta: {x: -0.17086792, y: 0.31700134}
+  m_AnchoredPosition: {x: 0.08544922, y: 0.14850235}
+  m_SizeDelta: {x: -0.1709, y: 0.33690023}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1928151234
 MonoBehaviour:
@@ -12910,7 +13442,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9366b1f7b45fd4443be94f56da9655a0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13017,7 +13549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91a5dd3d79f0dc44f8d45053e6f23c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 0}
+  _gameManager: {fileID: 1429120686}
   _dropClip: {fileID: 7400000, guid: 6d5786f31cb3a3e4289401f8a74ba9eb, type: 2}
 --- !u!95 &1936091954
 Animator:
@@ -13066,7 +13598,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945473622}
-  m_LocalRotation: {x: 0, y: 0, z: -0.001570869, w: 0.9999988}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0055910796, w: -0.99998444}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13074,11 +13606,11 @@ RectTransform:
   - {fileID: 1891966884}
   - {fileID: 1307614970}
   m_Father: {fileID: 1596837212}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.18}
-  m_AnchorMin: {x: 0.6603463, y: 0.35700002}
-  m_AnchorMax: {x: 1, y: 0.40600002}
-  m_AnchoredPosition: {x: 256.99994, y: -33}
-  m_SizeDelta: {x: 260.00595, y: 15.244484}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.641}
+  m_AnchorMin: {x: 0, y: 0.381}
+  m_AnchorMax: {x: 1, y: 0.53028756}
+  m_AnchoredPosition: {x: -0.0013427734, y: 1.7832031}
+  m_SizeDelta: {x: -0.048, y: -6.202}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945473624
 MonoBehaviour:
@@ -13152,10 +13684,10 @@ RectTransform:
   - {fileID: 1689670027}
   m_Father: {fileID: 404241712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.028, y: 0.71825606}
-  m_AnchorMax: {x: 0.09261421, y: 0.95500004}
-  m_AnchoredPosition: {x: -0.5, y: -1}
-  m_SizeDelta: {x: 1.5479126, y: 0.020507812}
+  m_AnchorMin: {x: 0.0322028, y: 0.6764441}
+  m_AnchorMax: {x: 0.10387357, y: 0.94851404}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 2.5479012, y: -1.9794998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2006648562
 MonoBehaviour:
@@ -13284,10 +13816,10 @@ RectTransform:
   - {fileID: 1577857137}
   m_Father: {fileID: 1596837212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6603463, y: 0.66400003}
-  m_AnchorMax: {x: 0.99300003, y: 0.70900005}
-  m_AnchoredPosition: {x: 252.52414, y: 71.705734}
-  m_SizeDelta: {x: 260.73914, y: 14.717278}
+  m_AnchorMin: {x: 0, y: 0.66341585}
+  m_AnchorMax: {x: 1, y: 0.84245193}
+  m_AnchoredPosition: {x: -0.000015258789, y: -0.25}
+  m_SizeDelta: {x: 0.000030518, y: -0.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2028411229
 MonoBehaviour:
@@ -13430,7 +13962,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0.3987918, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -13459,9 +13991,9 @@ RectTransform:
   m_Father: {fileID: 1307614970}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -19.283005}
-  m_SizeDelta: {x: 0, y: -7.2293015}
+  m_AnchorMax: {x: 1, y: 0.2822984}
+  m_AnchoredPosition: {x: -0.0069007874, y: 0.3927002}
+  m_SizeDelta: {x: -0.57699966, y: 0.78499985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2066566252
 GameObject:
@@ -13495,10 +14027,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2136429677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.238}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.14294052, y: -1.2374}
-  m_SizeDelta: {x: -0.2858963, y: 0.13297272}
+  m_AnchoredPosition: {x: -0.000009536743, y: 0.18200016}
+  m_SizeDelta: {x: 0, y: -0.36389995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2066566254
 MonoBehaviour:
@@ -13520,7 +14052,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 0e01dffc594426c419540cc55bb41d7f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13576,7 +14108,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9aeb16813f767b64686973aff89f54d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13608,10 +14140,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 915130099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 114, y: 77.42}
-  m_SizeDelta: {x: -603.356, y: -277.76}
+  m_AnchorMin: {x: 0.55, y: 0.51444685}
+  m_AnchorMax: {x: 0.7414021, y: 0.85}
+  m_AnchoredPosition: {x: 0.5, y: -2.5800018}
+  m_SizeDelta: {x: 1, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2114563402
 GameObject:
@@ -13647,10 +14179,10 @@ RectTransform:
   - {fileID: 1871212380}
   m_Father: {fileID: 915130099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -67.278015, y: -45.931305}
-  m_SizeDelta: {x: 40, y: 40}
+  m_AnchorMin: {x: 0.8885609, y: 0.85}
+  m_AnchorMax: {x: 0.94856083, y: 0.9395754}
+  m_AnchoredPosition: {x: -0.77801514, y: 2.568695}
+  m_SizeDelta: {x: -9, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2114563404
 MonoBehaviour:
@@ -13780,10 +14312,10 @@ RectTransform:
   - {fileID: 179027574}
   m_Father: {fileID: 333702354}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7156926, y: 0.238}
-  m_AnchorMax: {x: 0.80248064, y: 0.33600003}
-  m_AnchoredPosition: {x: -14.9435425, y: 35.023483}
-  m_SizeDelta: {x: 39.209717, y: 40.39931}
+  m_AnchorMin: {x: 0.58713347, y: 0}
+  m_AnchorMax: {x: 0.80248064, y: 1}
+  m_AnchoredPosition: {x: -0.20199585, y: 0.02681923}
+  m_SizeDelta: {x: 0.405, y: 0.053669}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2136429678
 CanvasRenderer:
@@ -13858,3 +14390,4 @@ SceneRoots:
   - {fileID: 404241712}
   - {fileID: 260461545}
   - {fileID: 915130099}
+  - {fileID: 1429120687}
