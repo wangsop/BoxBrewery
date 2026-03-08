@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
@@ -67,15 +68,23 @@ public class OrderScript : MonoBehaviour
         character.GetComponent<Animator>().enabled = true;
         int index = 0;
         List<int> temp = new List<int>();
-        for (int i = 0; i < GameManager.instance.GetComponent<GameManager>().customers.Count; i++)
-        {
-            if (GameManager.instance.GetComponent<GameManager>().potions[GameManager.instance.GetComponent<GameManager>().customers[i].potion.index].unlocked)
+        while (true){
+            for (int i = 0; i < GameManager.instance.GetComponent<GameManager>().customers.Count; i++)
             {
-                temp.Add(i);
+                if (GameManager.instance.GetComponent<GameManager>().potions[GameManager.instance.GetComponent<GameManager>().customers[i].potion.index].unlocked)
+                {
+                    temp.Add(i);
+                }
+            }
+            index = UnityEngine.Random.Range(0, temp.Count);
+            index = temp[index];
+            if (index != GameManager.instance.GetComponent<GameManager>().prevCustomer || temp.Count == 1)
+            {
+                Debug.Log("new customer");
+                break;
             }
         }
-        index = UnityEngine.Random.Range(0, temp.Count);
-        index = temp[index];
+        GameManager.instance.GetComponent<GameManager>().prevCustomer = index;
         GameManager.instance.GetComponent<GameManager>().currentCustomer = GameManager.instance.GetComponent<GameManager>().customers[index];
         charImage.sprite = ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).sprite;
         line = ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).request;
@@ -137,7 +146,7 @@ public class OrderScript : MonoBehaviour
             }
             else
             {
-                ingredientorder.sprite = ((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).ingredients[0].sprite;
+                ingredientorder.sprite = GameManager.instance.GetComponent<GameManager>().inventory[((Customer)GameManager.instance.GetComponent<GameManager>().currentCustomer).ingredients[0].index].sprite;
             }
         }
     }
